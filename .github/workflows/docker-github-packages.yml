@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: first-coding
+  IMAGE_NAME: imhojeong/first-coding
 
 jobs:
   build-and-push-image:
