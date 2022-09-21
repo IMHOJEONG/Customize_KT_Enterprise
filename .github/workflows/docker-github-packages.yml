@@ -43,5 +43,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: imhojeong/first-coding:latest
+          tags: ghcr.io/imhojeong/first-coding:latest
           labels: ""
