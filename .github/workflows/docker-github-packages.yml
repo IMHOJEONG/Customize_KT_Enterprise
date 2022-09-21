@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: imhojeong/first-coding
+  IMAGE_NAME: imhojeong/first-coding:latest
 
 jobs:
   build-and-push-image:
@@ -43,5 +43,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: latest
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.meta.outputs.tags }}
+
