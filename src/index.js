@@ -12,11 +12,11 @@ import './assets/scss/style.scss';
 const history = createBrowserHistory();
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  // <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Router history={history}>
       <App />
     </Router>,
-  </BrowserRouter>,
+  // </BrowserRouter>,
   document.getElementById('root')
 );
 
