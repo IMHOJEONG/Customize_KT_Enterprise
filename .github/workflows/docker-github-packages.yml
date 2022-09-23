@@ -54,7 +54,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            ls -al 
+            ./execute.sh 
+
 
       # - name: trigger jenkins job.
       #   uses: appleboy/jenkins-action@master
