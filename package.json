@@ -10,6 +10,7 @@
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
+    "react-spring": "^9.5.4",
     "sass": "^1.49.7"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "production": [
       ">0.2%",
       "not dead",
+      "not ie 11",
       "not op_mini all"
     ],
     "development": [
