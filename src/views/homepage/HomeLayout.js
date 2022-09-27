@@ -8,8 +8,6 @@ import Img1 from './img/1.PNG';
 import Img2 from './img/2.PNG';
 import Img3 from './img/3.PNG';
 
-import { useSpring, animated } from '@react-spring/web'
-
 const Layout = styled.div`
     display: flex;
 `;
