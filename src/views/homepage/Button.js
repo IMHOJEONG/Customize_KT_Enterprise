@@ -43,11 +43,11 @@ const StyledButton = styled.button`
     
 `;
 
-export function Button({ children, ...props }) {
+export function Button({ children, onClick, ...props }) {
     
     return (
         <StyledButtonLayout {...props}>
-            <StyledButton>
+            <StyledButton onClick={onClick}>
                 { children }
             </StyledButton>
         </StyledButtonLayout>
