@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Box, Button, Title } from './index';
-import Img1 from './img/1.PNG';
-import Img2 from './img/2.PNG';
-import Img3 from './img/3.PNG';
 import { MenuBox } from './MenuBox';
 import GlobalStyle from './GlobalStyle';
 import { Cursor } from './cursor';
+import Img1 from './img/1.PNG';
+import Img2 from './img/2.PNG';
+import Img3 from './img/3.PNG';
+
+
 const Layout = styled.div`
     display: flex;
 `;
@@ -25,7 +27,7 @@ export function HomeLayout() {
         <Layout>
             <GlobalStyle />
             <Cursor />
-            <Box backgroundImg={'https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}>
+            <Box backgroundImg={Img1}>
                 <Button
                     onClick={()=>setIsOpen({
                         left: !left,
@@ -35,7 +37,7 @@ export function HomeLayout() {
                 >Click!</Button>
                 <MenuBox show={left}></MenuBox>
             </Box>
-            <Box backgroundImg={ 'https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}>
+            <Box backgroundImg={Img2}>
                 <Button
                     onClick={()=>setIsOpen({
                         left: false,
@@ -45,8 +47,7 @@ export function HomeLayout() {
                 >Click!</Button>
                 <MenuBox show={middle}></MenuBox>
             </Box>
-            <Box backgroundImg={'https://images.pexels.com/photos/924675/pexels-photo-924675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
-}>
+            <Box backgroundImg={Img3}>
                 <Button
                     onClick={()=>setIsOpen({
                         left: false,

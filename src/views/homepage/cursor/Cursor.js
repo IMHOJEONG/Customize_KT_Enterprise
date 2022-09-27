@@ -8,6 +8,7 @@ const StyledDiv = styled.div`
    & > .cursor-dot-outline {
      pointer-events: none;
      position: absolute;
+     z-index: 4;
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
@@ -71,7 +72,7 @@ export const Cursor = () => {
     
           cancelAnimationFrame(requestRef.current);
         };
-      }, []);
+      });
 
       const toggleCursorVisibility = () => {
         if (cursorVisible.current) {
