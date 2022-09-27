@@ -2225,6 +2225,18 @@
     "semver" "^6.3.0"
     "tsutils" "^3.17.1"
 
+"@use-gesture/core@10.2.20":
+  "integrity" "sha512-4lFhHc8so4yIHkBEs641DnEsBxPyhJ5GEjB4PURFDH4p/FcZriH6w99knZgI63zN/MBFfylMyb8+PDuj6RIXKQ=="
+  "resolved" "https://registry.npmjs.org/@use-gesture/core/-/core-10.2.20.tgz"
+  "version" "10.2.20"
+
+"@use-gesture/react@^10.2.20":
+  "integrity" "sha512-KnJq9ZSqprWA6uNhWTUHZqTCh+rfa0j8ehTzqeBhktUPrmTj7yVOBvEQ/vSFU/7d72cGgWSsJ0f5T6GQCHXnvg=="
+  "resolved" "https://registry.npmjs.org/@use-gesture/react/-/react-10.2.20.tgz"
+  "version" "10.2.20"
+  dependencies:
+    "@use-gesture/core" "10.2.20"
+
 "@webassemblyjs/ast@1.8.5":
   "integrity" "sha512-aJMfngIZ65+t71C3y2nBBg5FFG0Okt9m0XEgWZ7Ywgn1oMAT8cNwx00Uv1cQyHtidq0Xn94R4TAywO+LCQ+ZAQ=="
   "resolved" "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.8.5.tgz"
