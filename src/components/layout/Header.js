@@ -105,14 +105,26 @@ const Header = ({
                     'header-nav',
                     isActive && 'is-active'
                   )}>
-                <div className="header-nav-inner">
+                <div className="header-nav-inner" color='white'>
                   <ul className={
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link to="#0" onClick={closeMenu}>About us</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>상품/서비스</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>산업</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>DX insight</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>고객지원 </Link>
                     </li>
                   </ul>
                   {!hideSignin &&
@@ -120,7 +132,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>상담 신청</Link>
                       </li>
                     </ul>}
                 </div>
