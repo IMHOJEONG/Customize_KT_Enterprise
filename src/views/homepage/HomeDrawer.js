@@ -6,7 +6,6 @@ import { useTransition, animated } from '@react-spring/web'
 
 // import styles from './styles.module.css'
 
-
 export default function HomeDrawer() {
     
   const [show, set] = useState(false)
