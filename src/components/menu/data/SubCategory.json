@@ -1,0 +1,46 @@
+{
+  "AI Robot": [
+    {
+      "name": "AI 방역로봇",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_005.do"
+    },
+    {
+      "name": "AI 서비스로봇",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_004.do"
+    },
+    {
+      "name": "AI 호텔로봇",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_001.do"
+    },
+    {
+      "name": "AI 뉴바리스타 로봇",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_002.do"
+    },
+    {
+      "name": "AI 케어로봇 시니어",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_003.do"
+    },
+    {
+      "name": "스마트팩토리 Cobot",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_006.do"
+    },
+    {
+      "name": "스마트팩토리 Vision",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_007.do"
+    }
+  ],
+  "AI Space": [
+    { "name": "AI 아파트", "url": "/pd/P_PD_AI_AS_001.do" },
+    { "name": "AI 주택형 솔루션", "url": "/pd/P_PD_AI_AS_002.do" }
+  ],
+  "기업인터넷": [
+    {
+      "name": "Flexline",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_CI_004.do"
+    },
+    {
+      "name": "GiGA office",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_CI_001.do"
+    }
+  ]
+}

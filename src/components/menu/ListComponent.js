@@ -9,7 +9,7 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 export default function ListComponent(props) {
   const [open, setOpen] = React.useState(false);
 
-  const { baseUrl, category, subCategoryList } = props;
+  const { category, subCategoryList } = props;
   const handleMouseInOut = () => {
     setOpen(!open);
   };
@@ -17,8 +17,8 @@ export default function ListComponent(props) {
   if (!subCategoryList) {
     return (
       <ListItemButton
-        href={`${baseUrl}${category.url}`}
-        style={{ color: "black" }}
+        href={`${category.url}`}
+        style={{ color: "black", fontSize: "0.45em" }}
       >
         <ListItemText primary={category.name} />
       </ListItemButton>
@@ -27,25 +27,22 @@ export default function ListComponent(props) {
 
   return (
     <div onMouseEnter={handleMouseInOut} onMouseLeave={handleMouseInOut}>
-      <ListItemButton
-        component="a"
-        href={`${baseUrl}${category.url}`}
-        style={{ color: "black" }}
-      >
+      <ListItemButton href={`${category.url}`} style={{ color: "black" }}>
         <ListItemText primary={category.name} />
         {open ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          {subCategoryList.map((subCategory) => {
+          {subCategoryList.map((subCategory, idx) => {
             return (
               <ListItemButton
-                sx={{ pl: 6 }}
-                href={`${baseUrl}${subCategory.url}`}
+                key={idx}
+                sx={{ pl: 4 }}
+                href={`${subCategory.url}`}
               >
                 <ListItemText
                   primary={`${subCategory.name}`}
-                  style={{ color: "#666" }}
+                  style={{ color: "#666", fontSize: "0.25em" }}
                 />
               </ListItemButton>
             );
