@@ -7,12 +7,9 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 
 export default function ListComponent(props) {
-  const [open, setOpen] = React.useState(false);
-
   const { category, subCategoryList } = props;
-  const handleMouseInOut = () => {
-    setOpen(!open);
-  };
+
+  const [open, setOpen] = React.useState(false);
 
   if (!subCategoryList) {
     return (
@@ -26,7 +23,7 @@ export default function ListComponent(props) {
   }
 
   return (
-    <div onMouseEnter={handleMouseInOut} onMouseLeave={handleMouseInOut}>
+    <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
       <ListItemButton href={`${category.url}`} style={{ color: "black" }}>
         <ListItemText primary={category.name} />
         {open ? <ExpandLess /> : <ExpandMore />}

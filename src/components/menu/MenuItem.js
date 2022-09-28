@@ -9,7 +9,7 @@ import CATEGORYLIST from "./data/Category.json";
 import SUBCATEGORYLIST from "./data/SubCategory.json";
 
 export default function MenuItem(props) {
-  const categoryName = props.categoryName;
+  const { name, url } = props.category;
 
   return (
     <List
@@ -18,23 +18,24 @@ export default function MenuItem(props) {
       aria-labelledby="nested-list-subheader"
       subheader={
         <ListSubheader
-          component="div"
-          id="nested-list-subheader"
+          component={url ? "a" : "div"}
+          href={`${url}`}
           style={{ color: "black", fontSize: "1em", fontWeight: "bold" }}
         >
-          {categoryName}
+          {name}
         </ListSubheader>
       }
     >
-      {CATEGORYLIST[categoryName].map((category) => {
-        return (
-          <ListComponent
-            key={category.name}
-            category={category}
-            subCategoryList={SUBCATEGORYLIST[category.name]}
-          />
-        );
-      })}
+      {CATEGORYLIST[name] &&
+        CATEGORYLIST[name].map((subCategory) => {
+          return (
+            <ListComponent
+              key={subCategory.name}
+              category={subCategory}
+              subCategoryList={SUBCATEGORYLIST[subCategory.name]}
+            />
+          );
+        })}
     </List>
   );
 }
