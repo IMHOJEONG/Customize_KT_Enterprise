@@ -13,17 +13,7 @@
     }
   ],
   "SUBHEADERS": {
-    "About Us": [
-      {
-        "name": "KT Enterprise 소개",
-        "url": "https://enterprise.kt.com/au/P_AU_ID_SM.do"
-      },
-      {
-        "name": "MISSION",
-        "url": "https://enterprise.kt.com/au/P_AU_MI_SM.do"
-      },
-      { "name": "인사말", "url": "https://enterprise.kt.com/au/P_AU_GR_SM.do" }
-    ],
+  
     "상품/서비스": [
       { "name": "AI/BigData" },
       { "name": "인터넷/전용회선" },
@@ -47,7 +37,18 @@
         "url": "https://enterprise.kt.com/sl/P_SL_FC_001.do"
       }
     ],
-    "DX Insight": [
+    "DX Information" : [
+
+      {
+        "name": "KT Enterprise 소개",
+        "url": "https://enterprise.kt.com/au/P_AU_ID_SM.do"
+      },
+      {
+        "name": "MISSION",
+        "url": "https://enterprise.kt.com/au/P_AU_MI_SM.do"
+      },
+      { "name": "인사말", "url": "https://enterprise.kt.com/au/P_AU_GR_SM.do" },
+    
       { "name": "전체", "url": "https://enterprise.kt.com/bt/P_BT_SM.do" },
       {
         "name": "DX Story",
@@ -64,9 +65,8 @@
       {
         "name": "컨퍼런스",
         "url": "https://enterprise.kt.com/bt/P_BT_CR_LT.do"
-      }
-    ],
-    "고객지원": [
+      },
+    
       {
         "name": "브로슈어/신청서",
         "url": "https://enterprise.kt.com/cs/P_CS_SI_RE_001.do"

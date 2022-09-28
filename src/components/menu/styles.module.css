@@ -1,0 +1,20 @@
+.c {
+    position: absolute;
+    width: 15vw;
+    height: 40vh;
+    cursor: pointer;
+    will-change: transform, opacity;
+  }
+  
+  .front,
+  .back {
+    background-repeat: no-repeat;
+
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

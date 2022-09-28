@@ -15,7 +15,7 @@ const Layout = styled.div`
     display: flex;
 `;
 
-const menuTitle = ['상품/서비스', '산업','DX Infomation'];
+const menuTitle = ['상품/서비스', '산업','DX Information'];
 
 export function HomeLayout() {
 
@@ -46,7 +46,7 @@ export function HomeLayout() {
                             })}
                             isKR={true}
                         >{menuTitle[0]}</Button>
-                        <MenuBox show={left}></MenuBox>
+                        <MenuBox show={left} menu={menuTitle[0]}></MenuBox>
                     </Box>
                     <Box backgroundImg={Img2Webp} show={true} name={"middle"}>
                         <Button
@@ -57,7 +57,7 @@ export function HomeLayout() {
                             })}
                             isKR={true}
                         >{menuTitle[1]}</Button>
-                        <MenuBox show={middle}></MenuBox>
+                        <MenuBox show={middle} menu={menuTitle[1]} index={1}></MenuBox>
                     </Box>
                     <Box backgroundImg={Img3Webp} show={true} name={"right"}>
                         <Button
@@ -68,7 +68,7 @@ export function HomeLayout() {
                             })}
                             isKR={false}
                         >{menuTitle[2]}</Button>
-                        <MenuBox show={right}></MenuBox>
+                        <MenuBox show={right} menu={menuTitle[2]}></MenuBox>
                     </Box>
                 </>
                 :
@@ -82,7 +82,7 @@ export function HomeLayout() {
                             })}
                             isKR={true}
                         >{menuTitle[0]}</Button>
-                        <MenuBox show={left}></MenuBox>
+                        <MenuBox show={left} menu={menuTitle[0]}></MenuBox>
                     </Box>
                     <Box backgroundImg={Img2Webp} show={middle} name={"middle"}>
                         <Button
@@ -93,7 +93,7 @@ export function HomeLayout() {
                             })}
                             isKR={true}
                         >{menuTitle[1]}</Button>
-                        <MenuBox show={middle}></MenuBox>
+                        <MenuBox show={middle} menu={menuTitle[1]} index={1}></MenuBox>
                     </Box>
                     <Box backgroundImg={Img3Webp} show={right} name={"right"}>
                         <Button
@@ -104,7 +104,7 @@ export function HomeLayout() {
                             })}
                             isKR={false}
                         >{menuTitle[2]}</Button>
-                        <MenuBox show={right}></MenuBox>
+                        <MenuBox show={right} menu={menuTitle[2]}></MenuBox>
                     </Box>
                 </>
             }

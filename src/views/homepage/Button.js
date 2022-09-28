@@ -20,7 +20,7 @@ const StyledButton = styled.button`
     font-family: ${props => props.isKR ? "Noto_SansKR_Bold": "Noto_Sans_Bold"};
     font-weight: bold;
     width: 11vw;
-    padding: 1vh 1vw;
+    padding: 2vh 1vw;
     
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
