@@ -21,13 +21,13 @@ const StyledDiv = styled.div`
    & > .cursor-dot {
     width: 8px;
     height: 8px;
-    background-color: #dc5656;
+    background-color: #EEE;
    }
 
    & > .cursor-dot-outline {
     width: 40px; 
     height: 40px;
-    background-color: rgba(229, 128, 128, 0.5);
+    background-color: rgba(254,254,254,0.2);
    } 
 
    & > .links-container {

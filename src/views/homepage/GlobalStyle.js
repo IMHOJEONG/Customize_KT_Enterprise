@@ -23,6 +23,14 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Noto_SansKR"; 
     src: url("./font/NotoSansKR-Light.otf");
   }
+  @font-face {
+    font-family: "Noto_Sans_Bold"; 
+    src: url("./font/NotoSans-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Noto_SansKR_Bold"; 
+    src: url("./font/NotoSansKR-Bold.otf");
+  }
 
 `;
 

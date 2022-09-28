@@ -11,18 +11,17 @@ const StyledButton = styled.button`
     font-size: 1vw;
     border-radius: 25px;
     opacity: .8;
-    background-image: background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);;
-    
+    background: #21130d;
+     
     border-style: none;
     box-sizing: border-box;
-    color: black;
+    color: white;
     flex-shrink: 0;
-    font-family: ${props => props.isKR ? "Noto_SansKR": "Noto_Sans"};
-    font-weight: 500;
+    font-family: ${props => props.isKR ? "Noto_SansKR_Bold": "Noto_Sans_Bold"};
+    font-weight: bold;
     width: 11vw;
     padding: 1vh 1vw;
     
-
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     transition: all .5s;
