@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Noto_Sans"; 
     src: url("./font/NotoSans-Light.ttf");
   }
+  @font-face {
+    font-family: "Noto_SansKR"; 
+    src: url("./font/NotoSansKR-Light.otf");
+  }
 
 `;
 

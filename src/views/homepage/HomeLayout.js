@@ -12,6 +12,8 @@ const Layout = styled.div`
     display: flex;
 `;
 
+const menuTitle = ['상품/서비스', '산업','DX Infomation'];
+
 export function HomeLayout() {
 
     const [isOpen, setIsOpen] = useState({
@@ -38,7 +40,8 @@ export function HomeLayout() {
                                 middle: false,
                                 right: false
                             })}
-                        >Click!</Button>
+                            isKR={true}
+                        >{menuTitle[0]}</Button>
                         <MenuBox show={left}></MenuBox>
                     </Box>
                     <Box backgroundImg={Img2} show={true} name={"middle"}>
@@ -48,7 +51,8 @@ export function HomeLayout() {
                                 middle: !middle,
                                 right: false
                             })}
-                        >Click!</Button>
+                            isKR={true}
+                        >{menuTitle[1]}</Button>
                         <MenuBox show={middle}></MenuBox>
                     </Box>
                     <Box backgroundImg={Img3} show={true} name={"right"}>
@@ -58,7 +62,8 @@ export function HomeLayout() {
                                 middle: false,
                                 right: !right
                             })}
-                        >Click!</Button>
+                            isKR={false}
+                        >{menuTitle[2]}</Button>
                         <MenuBox show={right}></MenuBox>
                     </Box>
                 </>
@@ -71,7 +76,8 @@ export function HomeLayout() {
                                 middle: false,
                                 right: false
                             })}
-                        >Click!</Button>
+                            isKR={true}
+                        >{menuTitle[0]}</Button>
                         <MenuBox show={left}></MenuBox>
                     </Box>
                     <Box backgroundImg={Img2} show={middle} name={"middle"}>
@@ -81,7 +87,8 @@ export function HomeLayout() {
                                 middle: !middle,
                                 right: false
                             })}
-                        >Click!</Button>
+                            isKR={true}
+                        >{menuTitle[1]}</Button>
                         <MenuBox show={middle}></MenuBox>
                     </Box>
                     <Box backgroundImg={Img3} show={right} name={"right"}>
@@ -91,7 +98,8 @@ export function HomeLayout() {
                                 middle: false,
                                 right: !right
                             })}
-                        >Click!</Button>
+                            isKR={false}
+                        >{menuTitle[2]}</Button>
                         <MenuBox show={right}></MenuBox>
                     </Box>
                 </>

@@ -17,11 +17,12 @@ const StyledButton = styled.button`
     box-sizing: border-box;
     color: black;
     flex-shrink: 0;
-    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-family: ${props => props.isKR ? "Noto_SansKR": "Noto_Sans"};
     font-weight: 500;
-    width: 10vw;
-    padding: 1vh 2vw;
+    width: 11vw;
+    padding: 1vh 1vw;
     
+
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     transition: all .5s;
