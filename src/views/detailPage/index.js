@@ -1,9 +1,13 @@
 import React from "react";
-import { Intro } from "./Intro";
+import { Intro } from "./intro";
+import { IntroImage } from "./introImage";
+import Configuration from "./configuration/Configuration";
 const Detail = () => {
   return (
     <>
       <Intro />
+      <IntroImage />
+      <Configuration />
     </>
   );
 };
