@@ -21,7 +21,7 @@ const Logo = ({
       <h1 className="m-0">
         <Link to="/">
           <Image
-            src={require('./../../../assets/images/test.png')}
+            src={require('./../../../assets/images/kt_enterprise_logo.png')}
             alt="Open"
             width={116}
             height={116} />
