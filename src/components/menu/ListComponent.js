@@ -7,17 +7,17 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 
 export default function ListComponent(props) {
-  const { category, subCategoryList } = props;
+  const { category, subCategoryList, fontSize } = props;
 
   const [open, setOpen] = React.useState(false);
 
   if (!subCategoryList) {
     return (
-      <ListItemButton
-        href={`${category.url}`}
-        style={{ color: "black", fontSize: "0.45em" }}
-      >
-        <ListItemText primary={category.name} />
+      <ListItemButton href={`${category.url}`} style={{ color: "black" }}>
+        <ListItemText
+          primary={category.name}
+          primaryTypographyProps={{ fontSize: { fontSize } }}
+        />
       </ListItemButton>
     );
   }
@@ -25,8 +25,15 @@ export default function ListComponent(props) {
   return (
     <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
       <ListItemButton href={`${category.url}`} style={{ color: "black" }}>
-        <ListItemText primary={category.name} />
-        {open ? <ExpandLess /> : <ExpandMore />}
+        <ListItemText
+          primary={category.name}
+          primaryTypographyProps={{ fontSize: { fontSize } }}
+        />
+        {open ? (
+          <ExpandLess fontSize={fontSize} />
+        ) : (
+          <ExpandMore fontSize={fontSize} />
+        )}
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
@@ -39,7 +46,10 @@ export default function ListComponent(props) {
               >
                 <ListItemText
                   primary={`${subCategory.name}`}
-                  style={{ color: "#666", fontSize: "0.25em" }}
+                  primaryTypographyProps={{
+                    color: "#666",
+                    fontSize: { fontSize },
+                  }}
                 />
               </ListItemButton>
             );
