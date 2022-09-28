@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const StyledBox = styled.div`
 
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     position: absolute;
     z-index: 3;
     border-radius: 15px;
