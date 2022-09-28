@@ -9,9 +9,8 @@ const StyledBox = styled.div`
     position: absolute;
     z-index: 3;
     border-radius: 15px;
-    background: rgb(105,98,226);
-    background: linear-gradient(135deg, rgba(105,98,226,0.8046568969384629) 0%, rgba(12,106,196,1) 35%, rgba(15,104,184,1) 75%, rgba(0,212,255,1) 100%);
-  
+    background: rgba(248, 245, 245,.5);
+   
 `
 
 export function MenuBox({ show }) {
@@ -27,7 +26,7 @@ export function MenuBox({ show }) {
     return (
     <animated.div style={props}>
       <StyledBox>
-        <div>BOX!</div>
+    
       </StyledBox>
     </animated.div>
   );

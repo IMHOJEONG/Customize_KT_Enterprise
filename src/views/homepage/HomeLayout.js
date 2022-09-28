@@ -4,9 +4,12 @@ import { Box, Button, Title } from './index';
 import { MenuBox } from './MenuBox';
 import GlobalStyle from './GlobalStyle';
 import { Cursor } from './cursor';
-import Img1 from './img/1.PNG';
-import Img2 from './img/2.PNG';
-import Img3 from './img/3.PNG';
+// import Img1 from './img/1.PNG';
+// import Img2 from './img/2.PNG';
+// import Img3 from './img/3.PNG';
+import Img1Webp from './img/1.webp';
+import Img2Webp from './img/2.webp';
+import Img3Webp from './img/3.webp';
 
 const Layout = styled.div`
     display: flex;
@@ -28,12 +31,13 @@ export function HomeLayout() {
         <Layout>
             <GlobalStyle />
             <Cursor />
+            <Title show={[left,middle,right].some((item)=>item)}/>
             {   
                 left === false && 
                 middle === false && 
                 right === false ? 
                 <>
-                    <Box backgroundImg={Img1} show={true} name={"left"}>
+                    <Box backgroundImg={Img1Webp} show={true} name={"left"}>
                         <Button
                             onClick={()=>setIsOpen({
                                 left: !left,
@@ -44,7 +48,7 @@ export function HomeLayout() {
                         >{menuTitle[0]}</Button>
                         <MenuBox show={left}></MenuBox>
                     </Box>
-                    <Box backgroundImg={Img2} show={true} name={"middle"}>
+                    <Box backgroundImg={Img2Webp} show={true} name={"middle"}>
                         <Button
                             onClick={()=>setIsOpen({
                                 left: false,
@@ -55,7 +59,7 @@ export function HomeLayout() {
                         >{menuTitle[1]}</Button>
                         <MenuBox show={middle}></MenuBox>
                     </Box>
-                    <Box backgroundImg={Img3} show={true} name={"right"}>
+                    <Box backgroundImg={Img3Webp} show={true} name={"right"}>
                         <Button
                             onClick={()=>setIsOpen({
                                 left: false,
@@ -69,7 +73,7 @@ export function HomeLayout() {
                 </>
                 :
                 <>
-                    <Box backgroundImg={Img1} show={left} name={"left"}>
+                    <Box backgroundImg={Img1Webp} show={left} name={"left"}>
                         <Button
                             onClick={()=>setIsOpen({
                                 left: !left,
@@ -80,7 +84,7 @@ export function HomeLayout() {
                         >{menuTitle[0]}</Button>
                         <MenuBox show={left}></MenuBox>
                     </Box>
-                    <Box backgroundImg={Img2} show={middle} name={"middle"}>
+                    <Box backgroundImg={Img2Webp} show={middle} name={"middle"}>
                         <Button
                             onClick={()=>setIsOpen({
                                 left: false,
@@ -91,7 +95,7 @@ export function HomeLayout() {
                         >{menuTitle[1]}</Button>
                         <MenuBox show={middle}></MenuBox>
                     </Box>
-                    <Box backgroundImg={Img3} show={right} name={"right"}>
+                    <Box backgroundImg={Img3Webp} show={right} name={"right"}>
                         <Button
                             onClick={()=>setIsOpen({
                                 left: false,
@@ -104,7 +108,7 @@ export function HomeLayout() {
                     </Box>
                 </>
             }
-            <Title />
+            
         </Layout>
 
     )
