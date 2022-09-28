@@ -5,15 +5,17 @@ import styled from 'styled-components';
 
 const StyledDiv = styled.div`
 
-    width: 25vw;
-    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 `;  
 
 export default function SecondMenu({ menu, image }) {
   const [flipped, set] = useState(false)
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
-    transform: `perspective(25vw) rotateX(${flipped ? 180 : 0}deg)`,
+    transform: `perspective(100vw) rotateX(${flipped ? 180 : 0}deg)`,
     config: { mass: 5, tension: 500, friction: 80 },
   })
 
@@ -28,7 +30,8 @@ export default function SecondMenu({ menu, image }) {
                 style={{ 
                     opacity: opacity.to(o => 1 - o), 
                     transform,
-                    backgroundImage: `url(${image})`
+                    backgroundImage: `url(${image})`,
+                    
                 }}
             />
             <a.div
@@ -37,7 +40,8 @@ export default function SecondMenu({ menu, image }) {
                     opacity,
                     transform,
                     rotateX: '180deg',
-                    backgroundImage: `url(${image})`
+                    backgroundImage: `url(${image})`,
+                    
                 }}
             />
         </StyledDiv>

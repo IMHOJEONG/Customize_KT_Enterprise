@@ -12,7 +12,7 @@ const StyledBox = styled.div`
     z-index: 3;
     border-radius: 15px;
     background: rgba(248, 245, 245,.5);
-    overflow-y: scroll;
+    overflow-y: ${props => props.overflow === false? 'hidden' : 'scroll'};
     overflow-x: hidden;
 
     &::-webkit-scrollbar-track
@@ -50,8 +50,8 @@ export function MenuBox({ show, menu, index }) {
       if(index === 1){
         return (
           <animated.div style={props}>
-            <StyledBox>
-              {show ? <SecondMenuLayout menu={menu}/> : <></>}
+            <StyledBox overflow={false}>
+              {show ? <SecondMenuLayout menu={menu} /> : <></>}
             </StyledBox>
           </animated.div>
         );

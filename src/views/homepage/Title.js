@@ -9,7 +9,7 @@ const StyledTitleLayout = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    z-index:2;
+    z-index: ${props => props.show ? 0 : 2};
     
 `;
 
@@ -31,11 +31,11 @@ const StyledImg = styled.img`
 export function Title({ show }) {
 
     return (
-        <StyledTitleLayout>
+        <StyledTitleLayout show={show}>
           <StyledPicture>
             {show ?
                 <>
-                </>   
+                </>
                     :
                 <>
                     <source srcSet={LogoWebp} type="image/webp" />

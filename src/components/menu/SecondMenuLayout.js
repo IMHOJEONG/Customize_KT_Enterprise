@@ -14,9 +14,10 @@ const SecondMenuData = [Finance, Manufacture, Distribution, Hospital, Public, Fr
 const StyledSecondMenuLayout = styled.div`
     width: 100vw;
     height: 90vh;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-around;
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    padding: 5vh 25vw;
+    grid-gap: 5vh 5vw;
 
 `
 export function SecondMenuLayout({ menu }) {
