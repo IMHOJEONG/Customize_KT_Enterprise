@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
-
+import CursorPng from './cursor.png';
 
 const StyledDiv = styled.div`
 
@@ -21,13 +21,13 @@ const StyledDiv = styled.div`
    & > .cursor-dot {
     width: 8px;
     height: 8px;
-    background-color: #EEE;
    }
 
    & > .cursor-dot-outline {
-    width: 40px; 
-    height: 40px;
-    background-color: rgba(254,254,254,0.2);
+    width: 100px; 
+    height: 100px;
+    background-image: url("${CursorPng}");
+    background-repeat: no-repeat;
    } 
 
    & > .links-container {
@@ -41,7 +41,7 @@ const StyledDiv = styled.div`
 `;
 
 export const Cursor = () => {
-    const delay = 10;
+    const delay = 1;
     const dot = useRef(null);
     const dotOutline = useRef(null);
     const list = useRef(null);

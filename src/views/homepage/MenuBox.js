@@ -3,6 +3,7 @@ import { useSpring, animated } from "react-spring";
 import styled from 'styled-components';
 import Menu from '../../components/menu/Menu';
 import { SecondMenuLayout } from '../../components/menu/SecondMenuLayout';
+import { ThirdMenuLayout } from '../../components/menu/ThirdMenuLayout';
 
 const StyledBox = styled.div`
 
@@ -11,8 +12,8 @@ const StyledBox = styled.div`
     position: absolute;
     z-index: 3;
     border-radius: 15px;
-    background: rgba(248, 245, 245,.5);
-    overflow-y: ${props => props.overflow === false? 'hidden' : 'scroll'};
+    background: rgba(255, 255, 255,.2);
+    overflow-y: ${props => props.overflow === "false"? 'hidden' : 'scroll'};
     overflow-x: hidden;
 
     &::-webkit-scrollbar-track
@@ -50,8 +51,17 @@ export function MenuBox({ show, menu, index }) {
       if(index === 1){
         return (
           <animated.div style={props}>
-            <StyledBox overflow={false}>
+            <StyledBox overflow={"false"}>
               {show ? <SecondMenuLayout menu={menu} /> : <></>}
+            </StyledBox>
+          </animated.div>
+        );
+      }
+      else if(index === 2) {
+        return (
+          <animated.div style={props}>
+            <StyledBox overflow={"false"}>
+              {show ? <ThirdMenuLayout menu={menu} open={show} /> : <></>}
             </StyledBox>
           </animated.div>
         );

@@ -4,6 +4,8 @@ const GlobalStyle = createGlobalStyle`
   
   * {
     cursor: none;
+    user-select: none;
+    cursor: url("cursor.cur");
   }
 
   *, *::before, *::after {

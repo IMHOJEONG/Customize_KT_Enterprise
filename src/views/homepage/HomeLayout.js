@@ -68,7 +68,7 @@ export function HomeLayout() {
                             })}
                             isKR={false}
                         >{menuTitle[2]}</Button>
-                        <MenuBox show={right} menu={menuTitle[2]}></MenuBox>
+                        <MenuBox show={right} menu={menuTitle[2]} index={2}></MenuBox>
                     </Box>
                 </>
                 :
@@ -104,7 +104,7 @@ export function HomeLayout() {
                             })}
                             isKR={false}
                         >{menuTitle[2]}</Button>
-                        <MenuBox show={right} menu={menuTitle[2]}></MenuBox>
+                        <MenuBox show={right} menu={menuTitle[2]} index={2}></MenuBox>
                     </Box>
                 </>
             }
