@@ -7,9 +7,13 @@ import * as CategoryData from "./mainData/Category.json";
 
 export function FirstMenuLayout({ menu }) {
 
-  const subHeadersArr = SUBHEADERS[menu];
+  const subHeadersArr = 
+    SUBHEADERS[menu].forEach((sumHeader) => {
+        const header = sumHeader.name;
+        return header;
+    });
 
-  const categoryArr = subHeadersArr[menu]; 
+//   subHeadersArr 
 
   return (
     <>
