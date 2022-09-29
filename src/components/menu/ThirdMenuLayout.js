@@ -29,11 +29,11 @@ export function ThirdMenuLayout() {
     return (
         <StyledThirdMenuLayout>
             {
-                ThirdMenuData.map((menu) => {
+                ThirdMenuData.map((menu, index) => {
                    
                     const subArray = [HEADERS[menu], ...SUBHEADERS[menu]]
         
-                    return <ThirdMenu menus={subArray} />
+                    return <ThirdMenu menus={subArray} key={index} />
                 })
             }
         </StyledThirdMenuLayout>
