@@ -1,8 +1,10 @@
 import React from "react";
-import { Intro } from "./intro";
+import { Intro } from "./Intro";
 import { IntroImage } from "./introImage";
 import Configuration from "./configuration/Configuration";
 import { InstallInfo } from "./InstallInfo";
+import { MoreInfo } from "./MoreInfo";
+
 const Detail = () => {
   return (
     <>
@@ -10,6 +12,7 @@ const Detail = () => {
       <IntroImage />
       <Configuration />
       <InstallInfo />
+      <MoreInfo />
     </>
   );
 };
