@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from "react-spring";
 import styled from 'styled-components';
+import { FirstMenuLayout } from '../../components/menu/FirstMenuLayout';
 import Menu from '../../components/menu/Menu';
 import { SecondMenuLayout } from '../../components/menu/SecondMenuLayout';
 import { ThirdMenuLayout } from '../../components/menu/ThirdMenuLayout';
@@ -70,7 +71,7 @@ export function MenuBox({ show, menu, index }) {
         return (
           <animated.div style={props}>
             <StyledBox>
-              {show ? <Menu menu={menu}/> : <></>}
+              {show ? <FirstMenuLayout menu={menu}/> : <></>}
             </StyledBox>
           </animated.div>
         );
