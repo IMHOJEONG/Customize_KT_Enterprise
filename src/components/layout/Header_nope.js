@@ -46,6 +46,10 @@ const Header = ({
     };
   });  
 
+  const fadeIn = () => {
+    
+  }
+
   const openMenu = () => {
     document.body.classList.add('off-nav-is-active');
     nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
@@ -113,20 +117,20 @@ const Header = ({
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-                    <li>
-                      <Link to="Section1" onClick={closeMenu}>About us</Link>
+                    <li onMouseOver = {openMenu}>
+                      <a href="https://enterprise.kt.com/au/P_AU_ID_SM.do">About us</a>
                     </li>
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>상품/서비스</Link>
+                    <li onMouseOver = {openMenu}>
+                      <a href="https://enterprise.kt.com/pd/P_PD_AI_SM.do">상품/서비스</a>
                     </li>
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>산업</Link>
+                    <li onMouseOver = {openMenu}> 
+                      <a href="https://enterprise.kt.com/sl/P_SL_FN_001.do">산업</a>
                     </li>
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>DX insight</Link>
+                    <li onMouseOver = {openMenu}>
+                      <a href="https://enterprise.kt.com/bt/P_BT_SM.do">DX insight</a>
                     </li>
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>고객지원 </Link>
+                    <li onMouseOver = {openMenu}>
+                      <a href="https://enterprise.kt.com/cs/P_CS_FQ_SC_001.do">고객지원 </a>
                     </li>
                     <li>
                       <div>
