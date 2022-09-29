@@ -2,7 +2,8 @@
   background-color: #cfe2fa;
 
   .header {
-    margin: 63px auto 42px;
+    margin: 0 auto;
+    padding: 63px 0 42px;
     width: fit-content;
 
     .title {
@@ -16,7 +17,7 @@
   }
 
   .content {
-    margin-bottom: 68px;
+    padding-bottom: 68px;
     display: flex;
     justify-content: center;
   }
