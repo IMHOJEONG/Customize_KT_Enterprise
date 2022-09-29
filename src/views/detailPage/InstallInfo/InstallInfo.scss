@@ -1,0 +1,100 @@
+.InstallInfo-container {
+  background-color: #cfe2fa;
+
+  .title {
+    padding: 60px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #000000;
+  }
+
+  .space {
+    width: 4vw;
+  }
+
+  .content-box {
+    position: relative;
+    background-color: #6b96df;
+
+    .tabs {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      left: calc(50% - 100px);
+      top: -45px;
+
+      .tab {
+        width: 100px;
+        height: 45px;
+        border-radius: 15px 15px 0 0;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: center;
+        letter-spacing: -0.5px;
+        color: #ffffff;
+        cursor: pointer;
+
+        &-selected {
+          background-color: #6b96df;
+        }
+
+        &-not-selected {
+          background-color: #92b5f1;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 60px;
+
+      &-img {
+        max-width: 592px;
+        width: 50vw;
+      }
+    }
+
+    .paragraph {
+      display: flex;
+      flex-direction: column;
+      width: 550px;
+      height: 510px;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+
+      .text-box {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+
+      .text {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 62px;
+        margin: 0;
+      }
+
+      .orange {
+        color: #fdad58;
+      }
+
+      .sub-text {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 0;
+      }
+    }
+
+    .not-display {
+      display: none;
+    }
+  }
+}
