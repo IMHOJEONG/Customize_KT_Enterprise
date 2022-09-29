@@ -6,74 +6,80 @@ import styles from './styles.thirdmenu.module.css';
 const StyledBoxButton = styled.div`
     display: flex;
     align-items: center;
-    justify-contents: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.20vw;
+    padding: 1vh 1vw;
+    background : rgba(255,255,255,0.5);
+    border-radius: 15px;
+    border: 2px solid rgba(255,255,255,0.5);
 `;  
 
+const StyleBoxFirstButton = styled.div`
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.20vw;
+    margin: 3vh 3vw;
+`;
+
+const FirstButton = (menus, index) => {
+    return (
+        <StyleBoxFirstButton onClick={()=> window.open(`${menus[index].url}`, "_blank")}>
+            {menus[index].name}
+        </StyleBoxFirstButton>
+    )
+}
 const Button = (menus, index) => {
     return (
-        <StyledBoxButton /*onClick={goPage(array[index].url)}*/>
+        <StyledBoxButton  onClick={()=> window.open(`${menus[index].url}`, "_blank")}>
             {menus[index].name}
         </StyledBoxButton>
     )
 }
 
+const LayoutComponent = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+`
+
 export const ThirdMenu = ({ menus }) => {
 
     const [open, set] = useState(true);
-    // array
-    // console.log(array);
-    // const array = SUBHEADERS[menu].slice();
 
     const trail = useTrail(menus.length, {
-      config: { mass: 5, tension: 2000, friction: 200 },
+      config: { mass: 7, tension: 2000, friction: 300 },
       opacity: open ? 1 : 0,
       x: open ? 0 : 20,
       height: open ? 50 : 0,
       from: { opacity: 0, x: 20, height: 0 },
     });
 
-    // const goPage = (url) =>{
-    //     location.href=url
-    // }
-    
     return (
-        <div className="trails-main" onClick={() => set(state => !state)}>
+        <LayoutComponent>
             {trail.map(({ height, ...style }, index) => {
                 if(index === 0) {
-                    return <></>;
+                    return (<div onClick={() => set(state => !state)} key={index}>
+                        {FirstButton(menus, index)}
+                    </div>);
                 }
                 else {
                     return (
-                    <a.div key={index} className={styles.trailsText} style={style}>
-                            <a.div style={{ height }}> 
-                            {Button(menus, index)}    
+                        <a.div key={index} className={styles.trailsText} style={{height, ... style}}>
+                            {Button(menus, index)}
                         </a.div>
-                    </a.div>) 
+                    ) 
                 }
             })}
-      </div>
+      </LayoutComponent>
     )
-  }
-
-
-// export default function ThirdMenu({ menu, image }) {
-
-//     return (
-//         <> 
-//             {/* <a.div
-//                 key={items[index]}
-//                 className="trails-text"
-//                 style={{
-//                     ...rest,
-//                     transform: x.interpolate(x => `translate3d(0,${x}px,0)`)
-//                 }}
-//             >
-//                 <a.div style={{ height }}>{items[index]}</a.div>
-//             </a.div> */}
-//         </>
-//       );
-
-// }
-
- 
- 
+}

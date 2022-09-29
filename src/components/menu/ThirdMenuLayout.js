@@ -19,7 +19,7 @@ const StyledThirdMenuLayout = styled.div`
     height: 90vh;
     display: grid; 
     grid-template-columns: repeat(3,1fr);
-    padding: 5vh 25vw;
+    padding: 15vh 25vw;
     grid-gap: 5vh 5vw;
 
 `;
@@ -32,11 +32,7 @@ export function ThirdMenuLayout() {
                 ThirdMenuData.map((menu) => {
                    
                     const subArray = [HEADERS[menu], ...SUBHEADERS[menu]]
-                    // const array = subArray.reduce((sum, arr)=>{
-                    //     sum = sum.concat(...arr); 
-                    //     return sum;
-                    // },[]);
-                    console.log(subArray);
+        
                     return <ThirdMenu menus={subArray} />
                 })
             }
