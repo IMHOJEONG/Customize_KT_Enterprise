@@ -11,7 +11,7 @@ export default function Menu(props) {
   const { headerName } = props;
 
   return (
-    <Box style={{ flexGrow: 1, padding: "20px", backgroundColor: "white" }}>
+    <Box style={{ flexGrow: 1, padding: "20px" }}>
       <Grid container justifyContent="center" spacing={{ xs: 2, md: 2 }}>
         {SUBHEADERS[headerName].map((category) => {
           return (

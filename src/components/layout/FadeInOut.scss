@@ -1,11 +1,26 @@
 .btnStyle {
-  display: inline-block;
-  padding: 3px;
-  cursor: pointer;
+  &-active {
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+  }
+  &-inactive {
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #119891;
+  }
 }
 
 .menu_active {
   position: fixed;
+  width: 100%;
+  max-height: 80%;
+  left: 0;
   background: white;
   z-index: 1;
+  overflow: auto;
 }

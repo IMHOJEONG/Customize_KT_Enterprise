@@ -13,7 +13,7 @@ export default function FadeInOut(props) {
       onMouseOver={() => setChecked(true)}
       onMouseLeave={() => setChecked(false)}
     >
-      <div class="btnStyle" color="black">
+      <div class={"btnStyle-" + (checked ? "inactive" : "active")}>
         {props.name}
       </div>
       <Box sx={{ display: "flex" }}>
