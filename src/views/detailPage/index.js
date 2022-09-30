@@ -4,6 +4,7 @@ import { IntroImage } from "./introImage";
 import Configuration from "./configuration/Configuration";
 import { InstallInfo } from "./installInfo";
 import { Video } from "./video";
+import { ChargeInfo } from "./chargeInfo";
 import { MoreInfo } from "./moreInfo";
 
 const Detail = () => {
@@ -14,6 +15,7 @@ const Detail = () => {
       <Configuration />
       <InstallInfo />
       <Video />
+      <ChargeInfo />
       <MoreInfo />
     </>
   );

@@ -1,0 +1,108 @@
+.ChargeInfo-container {
+  background-color: #4271d9;
+
+  .title {
+    padding: 60px 0 40px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+  }
+
+  .content-box {
+    width: 70vw;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #ffffff;
+
+    .tabs {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      left: calc(50% - 30vw);
+
+      .tab {
+        width: 30vw;
+        height: 45px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: center;
+        letter-spacing: -0.5px;
+        box-sizing: content-box;
+        color: #fdad58;
+        cursor: pointer;
+
+        &-selected {
+          border-bottom: 4px #fdad58 solid;
+        }
+
+        &-not-selected {
+          border-bottom: 4px #f1f1f1 solid;
+          color: #000000;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      padding: 60px 35px 0;
+      margin-bottom: 10px;
+
+      &-para {
+        display: flex;
+        justify-content: center;
+      }
+
+      &-img {
+        max-width: 800px;
+        width: 60vw;
+        margin: 20px auto 0;
+      }
+
+      .paragraph {
+        display: flex;
+        justify-content: flex-end;
+        min-width: 240px;
+        width: 50%;
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+
+        &-title {
+          width: 25vw;
+          margin-bottom: 0;
+          color: #000000;
+        }
+
+        &-content {
+          margin-bottom: 0;
+          font-size: 13px;
+          color: #666666;
+        }
+      }
+
+      .giga-genie-img {
+        min-width: 320px;
+        max-width: 960px;
+        width: 32vw;
+        height: 18vw;
+        margin: auto 0;
+      }
+    }
+
+    .not-display {
+      display: none;
+    }
+  }
+
+  .space {
+    height: 50px;
+  }
+}
