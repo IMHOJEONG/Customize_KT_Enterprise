@@ -6,6 +6,7 @@ import { InstallInfo } from "./installInfo";
 import { Video } from "./video";
 import { ChargeInfo } from "./chargeInfo";
 import { MoreInfo } from "./moreInfo";
+import { ClientList } from "./clientList";
 
 const Detail = () => {
   return (
@@ -17,6 +18,7 @@ const Detail = () => {
       <Video />
       <ChargeInfo />
       <MoreInfo />
+      <ClientList />
     </>
   );
 };
