@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header1.css';
+import FadeInOut from './FadeInOut';
 
 const Header = () => {
     const openMenu = () => {
@@ -14,26 +15,16 @@ const Header = () => {
                         alt="">
                     </img>
                 </div>
-                  
-                <ul className="list">
-                    <li onMouseOver={openMenu}>
-                      <Link className="list-name" to="Section1">About us</Link>
+                <div className='list'>
+                    <li>
+                        <FadeInOut className="list-name" to="Section1" name="상품/서비스"/>
                     </li>
                     <li>
-                      <Link className="list-name" to="#0"  onClick={openMenu}>상품/서비스</Link>
+                        <FadeInOut className="list-name" to="Section1" name="산업"/>
                     </li>
                     <li>
-                      <Link className="list-name" to="#0" color='black' onClick={openMenu}>산업</Link>
+                        <FadeInOut className="list-name" to="Section1" name="DX Information"/>
                     </li>
-                    <li>
-                      <Link className="list-name" to="#0" color='black' onClick={openMenu}>DX insight</Link>
-                    </li>
-                    <li>
-                      <Link className="list-name" to="#0" color='black' onClick={openMenu}>고객지원 </Link>
-                    </li>
-                </ul>
-
-                <ul className="list">
                     <li>
                         <div>
                             <img src={require('./../../assets/images/search_icon.png')}
@@ -58,7 +49,7 @@ const Header = () => {
                             <Link className="list-name" to="#0" color='black' onClick={openMenu}>케이톡</Link>
                         </div>
                     </li>
-                </ul>
+                </div>
             </div>
         </div>
     )
