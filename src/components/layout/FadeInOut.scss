@@ -1,0 +1,11 @@
+.btnStyle {
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.menu_active {
+  position: fixed;
+  background: white;
+  z-index: 1;
+}
