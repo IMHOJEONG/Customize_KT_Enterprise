@@ -10,12 +10,12 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header-container" color='white'>
-                    <img src={require('./../../assets/images/kt_enterprise_logo.png')}
+                    <img className = "logo"src={require('./../../assets/images/kt_enterprise_logo.png')}
                         alt="">
                     </img>
                 <div className='list'>
                     <li>
-                        <FadeInOut className="service-lis" to="Section1" name="상품/서비스"/>
+                        <FadeInOut className="list-name" to="Section1" name="상품/서비스"/>
                     </li>
                     <li>
                         <FadeInOut className="list-name" to="Section1" name="산업"/>
@@ -27,20 +27,20 @@ const Header = () => {
                     
                 <div className='list2'>
                     <li>
-                        <img src={require('./../../assets/images/search_icon.png')}
+                        <img className = "middle" src={require('./../../assets/images/search_icon.png')}
                             height="30px"
                             width="30px"
                             alt="">
                         </img>
-                        <Link className="list-name" to="#0" color='black' onClick={openMenu}>검색</Link>
+                        <Link className="list-name2" to="#0" onClick={openMenu}>검색</Link>
                     </li>
                     <li>
-                        <img src={require('./../../assets/images/k_talk_icon.png')}
+                        <img className = "middle" src={require('./../../assets/images/k_talk_icon.png')}
                             height="30px"
                             width="30px"
                             alt="">
                         </img>
-                        <Link className="list-name" to="#0" color='black' onClick={openMenu}>케이톡</Link>
+                        <Link className="list-name2" to="#0" onClick={openMenu}>케이톡</Link>
                         
                     </li>
                 </div>

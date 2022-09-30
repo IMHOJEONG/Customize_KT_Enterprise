@@ -33,13 +33,11 @@
 }
 .section1{
     color: #000000;
-};
-
-
-.list2 .list-name2{
-    color: #000000;
 }
 
+.list2 .list-name2 {
+    color: black !important;
+}
 
 ul, li{
     position: relative;
@@ -48,8 +46,14 @@ ul, li{
 }
 
 
-.header .header-container img {
+.header .header-container .logo {
     margin-left: 0;
+}
+
+.header .header-container .middle {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
