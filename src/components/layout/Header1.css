@@ -14,7 +14,7 @@
 }
 
 .list {
-    width: 30vw;
+    width: 40vw;
     display:flex;
     list-style:none;
     padding-left: 20px;
@@ -24,10 +24,10 @@
 }
 
 .list2 {
-    width: 15vw;
+    width: 10vw;
     justify-content: space-around;
     align-items: center;
-
+    padding: 10px;
     display: flex;
     list-style: none;
 }
