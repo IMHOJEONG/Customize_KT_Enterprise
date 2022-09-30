@@ -2,8 +2,9 @@ import React from "react";
 import { Intro } from "./intro";
 import { IntroImage } from "./introImage";
 import Configuration from "./configuration/Configuration";
-import { InstallInfo } from "./InstallInfo";
-import { MoreInfo } from "./MoreInfo";
+import { InstallInfo } from "./installInfo";
+import { Video } from "./video";
+import { MoreInfo } from "./moreInfo";
 
 const Detail = () => {
   return (
@@ -12,6 +13,7 @@ const Detail = () => {
       <IntroImage />
       <Configuration />
       <InstallInfo />
+      <Video />
       <MoreInfo />
     </>
   );
