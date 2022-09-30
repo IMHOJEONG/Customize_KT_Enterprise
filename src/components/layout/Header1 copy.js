@@ -10,9 +10,11 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header-container" color='white'>
+                <div>
                     <img src={require('./../../assets/images/kt_enterprise_logo.png')}
                         alt="">
                     </img>
+                </div>
                 <div className='list'>
                     <li>
                         <FadeInOut className="service-lis" to="Section1" name="상품/서비스"/>
@@ -23,25 +25,29 @@ const Header = () => {
                     <li>
                         <FadeInOut className="list-name" to="Section1" name="DX Information"/>
                     </li>
-                </div>
-                    
-                <div className='list2'>
                     <li>
-                        <img src={require('./../../assets/images/search_icon.png')}
-                            height="30px"
-                            width="30px"
-                            alt="">
-                        </img>
-                        <Link className="list-name" to="#0" color='black' onClick={openMenu}>검색</Link>
+                        <div>
+                            <img src={require('./../../assets/images/search_icon.png')}
+                                height="50px"
+                                width="50px"
+                                alt="">
+                            </img>
+                        </div>
+                        <div>
+                            <Link className="list-name" to="#0" color='black' onClick={openMenu}>검색</Link>
+                        </div>
                     </li>
                     <li>
-                        <img src={require('./../../assets/images/k_talk_icon.png')}
-                            height="30px"
-                            width="30px"
-                            alt="">
-                        </img>
-                        <Link className="list-name" to="#0" color='black' onClick={openMenu}>케이톡</Link>
-                        
+                        <div>
+                            <img src={require('./../../assets/images/k_talk_icon.png')}
+                                height="50px"
+                                width="50px"
+                                alt="">
+                            </img>
+                        </div>
+                        <div>
+                            <Link className="list-name" to="#0" color='black' onClick={openMenu}>케이톡</Link>
+                        </div>
                     </li>
                 </div>
             </div>
