@@ -31,6 +31,14 @@
     display: flex;
     list-style: none;
 }
+.section1{
+    color: #000000;
+};
+
+
+.list2 .list-name2{
+    color: #000000;
+}
 
 
 ul, li{
@@ -39,14 +47,9 @@ ul, li{
     margin: 0px !important;
 }
 
-.header li {
-    
-}
 
 .header .header-container img {
     margin-left: 0;
 }
 
-.header .header-container .list .list-name {
-    color: #000000;
-}
+
