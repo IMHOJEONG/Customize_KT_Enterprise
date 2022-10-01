@@ -4,7 +4,7 @@ import { animated } from '@react-spring/web'
 export const Container = styled('div')`
 
   margin: 0;
-  padding: 0;
+  padding: 1vh 1vw;
   font-size: 1.1vw;
   line-height: 21px;
   --webkit-user-select: none;
