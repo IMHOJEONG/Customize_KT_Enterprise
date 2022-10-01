@@ -14,7 +14,7 @@ export const Container = styled('div')`
   overflow-y: scroll;
   overflow-x: hidden;
   box-shadow: 2px 1px 2px 2px lightslategrey;
-  
+
   &::-webkit-scrollbar {
     width: 16px;
   }
@@ -37,7 +37,6 @@ export const Container = styled('div')`
 `;
 
 export const Frame = styled('div')`
-  
   position: relative;
   padding: 4px 0px 0px 0px;
   text-overflow: ellipsis;
@@ -61,7 +60,7 @@ export const Title = styled('span')`
 export const Content = styled(animated.div)`
 
   will-change: transform, opacity, height;
-  margin-left: 6px;
+  margin-left: 0.6vw;
   padding: 0px 0px 0px 14px;
   border-left: 1px dashed rgba(255, 255, 255, 0.4);
 `;

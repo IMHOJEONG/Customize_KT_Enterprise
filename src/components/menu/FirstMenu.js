@@ -26,7 +26,7 @@ const InnerFrame = styled.div`
 `;
 
 const Tree = React.memo(({ children, name, style, 
-  onClick, 
+  item, 
   defaultOpen = false }) => {
     
   const [isOpen, setOpen] = useState(defaultOpen)
@@ -37,22 +37,32 @@ const Tree = React.memo(({ children, name, style,
     to: {
       height: isOpen ? viewHeight : 0,
       opacity: isOpen ? 1 : 0,
+      
       y: isOpen ? 0 : 20,
     },
   })
   
+  const goNextPage = (isOpen, item) => {
+      window.open(`${item.url}`, "_blank")
+  } 
+
   const Icon = Icons[`${children ? (isOpen ? 'Minus' : 'Plus') : 'Close'}SquareO`]
   return (
     <Frame>
       <InnerFrame>
         <Icon style={{ ...toggle, opacity: children ? 1 : 0.3 }} onClick={() => setOpen(!isOpen)} />
-        <Title style={style} onClick={onClick}>{name}</Title>
+        <Title style={style} onClick={(isOpen)=>goNextPage(isOpen, item)}>{name}</Title>
       </InnerFrame>
       <Content
         style={{
           opacity,
           height: isOpen && previous === isOpen ? 'auto' : height,
-          width: '15vw'
+          pointerEvents: isOpen? 'auto' : 'none', 
+          width: "40vw",
+          maxWidth: '20vw',
+          minHeight: 'auto',
+          maxHeight: '40vh',
+          // height: '15vh'
         }}>
         <a.div ref={ref} style={{ y }} children={children} />
       </Content>
@@ -63,7 +73,7 @@ const Tree = React.memo(({ children, name, style,
 export function FirstMenu({
   header
 }) {
-  console.log(CategoryData.Data[header]);
+  // console.log(CategoryData.Data[header]);
   const categoryDataArr = CategoryData.Data[header];
   const subCategoryDataArr = SubCategoryData.Data;
   return (
@@ -74,24 +84,23 @@ export function FirstMenu({
         {
           categoryDataArr.map((item, index)=>{
             
-            console.log(`item : ${item}`);
+            // console.log(`item : ${item}`);
             return (
               <>
-            <Tree name={item.name} onClick={()=> window.open(`${item.url}`, "_blank")}
-              
-            >
+            <Tree name={item.name} item={item}>
               {
                 subCategoryDataArr[item.name] ? 
-                  subCategoryDataArr[item.name].map((item, index)=>{
+                subCategoryDataArr[item.name].map((item, index)=>{
+                    console.log(item);
                     if(item){
-                      return <Tree name={item.name} onClick={()=> window.open(`${item.url}`, "_blank")}/>
+                      return <Tree name={item.name} item={item}/>
                     }
                     else {
-                      return <></>
+                      return ''
                     }
                   })
                 : 
-                 <></>
+                 ''
               }
               {/* <Tree name="hello" /> */}
               {/* <Tree name="sub-subtree with children">
