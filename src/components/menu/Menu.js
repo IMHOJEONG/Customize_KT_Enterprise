@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import MenuItem from "./MenuItem";
 
 // data
-import { HEADERS, SUBHEADERS } from "./data/Header.json";
+import { SUBHEADERS } from "./data/Header.json";
 
 const BoxStyle = {
   width: "100vw",

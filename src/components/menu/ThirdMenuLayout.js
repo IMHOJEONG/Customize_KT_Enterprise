@@ -1,11 +1,10 @@
 import { HEADERS,SUBHEADERS } from "./mainData/Header.json";
-import React, { useState } from "react";
-import DxStory from './imgs/dxinfo/dx_story.webp';
-import Intro from './imgs/dxinfo/intro.webp';
-import MyBiz from './imgs/dxinfo/my_biz.webp';
+import React from "react";
+// import DxStory from './imgs/dxinfo/dx_story.webp';
+// import Intro from './imgs/dxinfo/intro.webp';
+// import MyBiz from './imgs/dxinfo/my_biz.webp';
 import { ThirdMenu } from './ThirdMenu';
 import styled from 'styled-components';
-import { useTrail, animated as a } from "react-spring";
 
 const ThirdMenuData = [
 

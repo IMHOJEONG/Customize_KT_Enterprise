@@ -3,7 +3,6 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   
   * {
-    cursor: none;
     user-select: none;
   }
 

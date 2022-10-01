@@ -74,7 +74,7 @@ export const ThirdMenu = ({ menus }) => {
                 }
                 else {
                     return (
-                        <a.div key={index} className={styles.trailsText} style={{height, ... style}}>
+                        <a.div key={index} className={styles.trailsText} style={{height, ...style}}>
                             {Button(menus, index)}
                         </a.div>
                     ) 

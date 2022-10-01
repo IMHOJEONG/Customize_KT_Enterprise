@@ -19,8 +19,7 @@ const StyledDiv = styled.div`
    }
 
    & > .cursor-dot {
-    width: 8px;
-    height: 8px;
+    
    }
 
    & > .cursor-dot-outline {
@@ -28,6 +27,7 @@ const StyledDiv = styled.div`
     height: 100px;
     background-image: url("${CursorPng}");
     background-repeat: no-repeat;
+    background-position: center;
    } 
 
    & > .links-container {
