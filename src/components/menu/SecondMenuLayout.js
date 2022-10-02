@@ -26,7 +26,7 @@ export function SecondMenuLayout({ menu }) {
     return (
         <StyledSecondMenuLayout>
             {array.map((menu, index)=>{
-                return <SecondMenu menu={menu} image={SecondMenuData[index]}/>
+                return <SecondMenu menu={menu} image={SecondMenuData[index]} key={index}/>
             })}
         </StyledSecondMenuLayout>
     )
