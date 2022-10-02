@@ -4,7 +4,7 @@ import { Box, Button, Title } from './index';
 import { MenuBox } from './MenuBox';
 import GlobalStyle from './GlobalStyle';
 import { Cursor } from './cursor';
-import Chatbot, { createChatBotMessage }from "react-chatbot-kit";
+import Chatbot from "react-chatbot-kit";
 import '../../components/chatbot/chatbot.css';
 import { ActionProvider, MessageParser, config } from '../../components/chatbot';
 import Img1Webp from './img/1.webp';
@@ -36,9 +36,11 @@ export function HomeLayout() {
                 <Cursor />
                 {isChatOpen ? 
                     <Chatbot
+                        headerText='임호정'
                         config={config}
                         messageParser={MessageParser}
                         actionProvider={ActionProvider}
+                        placeholderText='궁금한 점을 입력해주세요!'
                     />
                         :
                     <></>

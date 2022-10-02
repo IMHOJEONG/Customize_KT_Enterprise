@@ -3,8 +3,8 @@ import React from 'react';
 export const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     console.log(message);
-    if(message.includes('hello')){
-        actions.handleHello();
+    if(message.includes('안녕')){
+        actions.handle_HELLO_RESPONSE();
     }
   };
 
