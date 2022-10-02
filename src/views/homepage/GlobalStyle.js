@@ -25,7 +25,12 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
     font-family: "Noto_Sans_Bold"; 
-    src: url("./font/NotoSans-Bold.ttf");
+    src: url('./font/NotoSans-Bold.woff2') format('woff2'),
+      url('./font/NotoSans-Bold.woff') format('woff');
+      url("./font/NotoSans-Bold.ttf") format('ttf');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
   }
   @font-face {
     font-family: "Noto_SansKR_Bold"; 
