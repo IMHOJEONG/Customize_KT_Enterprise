@@ -1,8 +1,7 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import { FirstMenu } from './FirstMenu';
-import { HEADERS, SUBHEADERS } from "./mainData/Header.json";
-import * as CategoryData from "./mainData/Category.json";
+import { SUBHEADERS } from "./mainData/Header.json";
 
 const GridFirstStyleDiv = styled.div`
     

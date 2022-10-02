@@ -16,22 +16,22 @@ const SharedDivStyle = css`
 `
 
 const StyledDiv = styled.div`
-
+    width:100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    position: relative;
 `;  
 
 const StyledBackDiv = styled(a.div)`
     ${SharedDivStyle}
-    opacity: ${props=> props.opacity};
-    transform: ${props=> props.transform};
-    backgroundImage: url(${props => props.image});
+    ${props => ({...props})}
 `;
 
 const StyledFrontDiv = styled(a.div)`
     ${SharedDivStyle}
+    ${props => ({...props})}
 `;
 
 
@@ -42,32 +42,28 @@ export default function SecondMenu({ menu, image }) {
     transform: `perspective(100vw) rotateX(${flipped ? 180 : 0}deg)`,
     config: { mass: 5, tension: 500, friction: 80 },
   })
-  console.log(transform, opacity);
+//   console.log(transform, opacity);
   return (
         
-        <StyledDiv className={styles.container} 
+        <StyledDiv
             onMouseOver={() => set(state => !state)}
             onMouseOut={() => set(state => !state)}
         >
-            {/* <a.div
-                className={`${styles.c} ${styles.back}`}
-                style={{ 
-                   
-                }}
-            /> */}
-            <StyledBackDiv image={image} 
-                />
-            {/* <StyledFrontDiv></StyledFrontDiv>
-            <a.div
-                className={`${styles.c} ${styles.front}`}
+            <StyledBackDiv
+                style={{
+                    opacity: opacity.to(o => 1 - o), 
+                    transform,
+                    backgroundImage: `url(${image})`,
+                }} 
+            />
+            <StyledFrontDiv 
                 style={{
                     opacity,
                     transform,
                     rotateX: '180deg',
                     backgroundImage: `url(${image})`,
-                    
                 }}
-            /> */}
+            />
         </StyledDiv>
   )
 }
