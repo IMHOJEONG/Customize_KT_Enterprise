@@ -26,12 +26,16 @@ const StyledDiv = styled.div`
 
 const StyledBackDiv = styled(a.div)`
     ${SharedDivStyle}
-    ${props => ({...props})}
+    ${props => props.opacity}
+    ${props => props.transform}
+    ${props => props.backgroundImage}
 `;
 
 const StyledFrontDiv = styled(a.div)`
     ${SharedDivStyle}
-    ${props => ({...props})}
+    ${props => props.opacity}
+    ${props => props.transform}
+    ${props => props.backgroundImage}
 `;
 
 
