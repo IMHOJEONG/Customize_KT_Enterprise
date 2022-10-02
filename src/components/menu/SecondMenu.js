@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useSpring, a } from '@react-spring/web'
-import styles from './styles.secondmenu.module.css';
 import styled, { css, keyframes } from 'styled-components';
 
 const SharedDivStyle = css`
@@ -10,7 +9,6 @@ const SharedDivStyle = css`
     cursor: pointer;
     will-change: transform, opacity;
     border-radius: 15px;
-    border: 2px solid mediumblue;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 `
@@ -37,6 +35,23 @@ const StyledFrontDiv = styled(a.div)`
     ${props => props.transform}
     ${props => props.backgroundImage}
 `;
+
+const StyledFrontShadowBox = styled.div`
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+    font-family: 'Noto_SansKR_Bold';
+    font-size: 2vw;
+`;
+
+const goNextPage = (url) => {
+    window.open(`${url}`, "_blank")
+} 
 
 
 export default function SecondMenu({ menu, image }) {
@@ -67,7 +82,11 @@ export default function SecondMenu({ menu, image }) {
                     rotateX: '180deg',
                     backgroundImage: `url(${image})`,
                 }}
-            />
+            >
+                <StyledFrontShadowBox onClick={()=>goNextPage(menu.url)}>
+                    {menu.name}
+                </StyledFrontShadowBox>
+            </StyledFrontDiv>
         </StyledDiv>
   )
 }
