@@ -1,10 +1,17 @@
 import React from 'react';
+import ResponseData from './data.json';
+
+const actionsResult = {};
+ResponseData.forEach((data)=>{
+  actionsResult[data.Q] = data.Q;
+});
 
 export const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     console.log(message);
-    if(message.includes('안녕')){
-        actions.handle_HELLO_RESPONSE();
+
+    if(message === actionsResult[message]) {
+      actions[message]();
     }
   };
 
