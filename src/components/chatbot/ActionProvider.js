@@ -5,7 +5,6 @@ const HELLO_RESPONSE_MESSAGE = `안녕하세요.`;
 
 const BYE_RESPONSE_MESSAGE = `안녕히 가세요.`;
 
-
 function makeFunction (createChatBotMessage, setState, message) {
 
   function botFunction(){
