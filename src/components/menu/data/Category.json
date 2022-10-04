@@ -152,5 +152,57 @@
       "name": "우리TV시리즈",
       "url": "https://enterprise.kt.com/pd/P_PD_MD_WT_SM.do"
     }
+  ],
+  "About Us": [
+    {
+      "name": "KT Enterprise 소개",
+      "url": "https://enterprise.kt.com/au/P_AU_ID_SM.do"
+    },
+    {
+      "name": "MISSION",
+      "url": "https://enterprise.kt.com/au/P_AU_MI_SM.do"
+    },
+    { "name": "인사말", "url": "https://enterprise.kt.com/au/P_AU_GR_SM.do" }
+  ],
+  "DX Insight": [
+    { "name": "전체", "url": "https://enterprise.kt.com/bt/P_BT_SM.do" },
+    {
+      "name": "DX Story",
+      "url": "https://enterprise.kt.com/bt/P_BT_TI_LT_001.do"
+    },
+    {
+      "name": "영상 갤러리",
+      "url": "https://enterprise.kt.com/bt/P_BT_VG_LT_001.do"
+    },
+    {
+      "name": "언론보도",
+      "url": "https://enterprise.kt.com/bt/P_BT_MR_LT_001.do"
+    },
+    {
+      "name": "컨퍼런스",
+      "url": "https://enterprise.kt.com/bt/P_BT_CR_LT.do"
+    }
+  ],
+  "고객지원": [
+    {
+      "name": "브로슈어/신청서",
+      "url": "https://enterprise.kt.com/cs/P_CS_SI_RE_001.do"
+    },
+    {
+      "name": "자주하는 질문(FAQ)",
+      "url": "https://enterprise.kt.com/cs/P_CS_FQ_SC_001.do"
+    },
+    {
+      "name": "1:1 온라인 문의",
+      "url": "https://enterprise.kt.com/cs/P_CS_CQ_001.do"
+    },
+    {
+      "name": "공지사항",
+      "url": "https://enterprise.kt.com/cs/P_CS_NT_LT_001.do"
+    },
+    {
+      "name": "마이비즈",
+      "url": "https://mkt.enterprise.kt.com/l/900091/2021-07-02/35j75"
+    }
   ]
 }
