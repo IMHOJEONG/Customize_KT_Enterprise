@@ -4,6 +4,8 @@ import classNames from 'classnames';
 import Logo from './partials/Logo';
 import FooterNav from './partials/FooterNav';
 import FooterSocial from './partials/FooterSocial';
+import './Footer.css';
+
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -33,19 +35,33 @@ const Footer = ({
       {...props}
       className={classes}
     >
-      <div className="container">
+      
+      <hr/>
+      <div className="footer-container">
         <div className={
           classNames(
-            'site-footer-inner',
+            'site-footer-inner2',
             topDivider && 'has-top-divider'
           )}>
-          <div className="footer-top space-between text-xxs">
-            <Logo />
-            <FooterSocial />
+          <div className="footer-top text-xxs">
+            <div>
+              이용약관&nbsp; | &nbsp;기업상품 약관&nbsp; | &nbsp;법적고지&nbsp; |&nbsp; <b>개인정보처리방침</b> &nbsp;|&nbsp; 윤리위반신고
+            </div>
+            <div className='group-test'>
+              <div>그룹사 소개</div>
+            </div>
           </div>
-          <div className="footer-bottom space-between text-xxs invert-order-desktop">
-            <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://enterprise.kt.com/">3조</a>. All right reserved</div>
+          <hr/>
+          <div className="footer-bottom text-xxs">
+            <div className="footer-copyright">Made by <a href="https://enterprise.kt.com/"><b>3조</b></a>. All right reserved</div>
+            <div className="footer-logo">
+                <a href="https://blog.naver.com/ktenterprise" target="_blank" title="KT Enterprise 블로그 새창열림"><img src="https://enterprise.kt.com/resource/images/common/ico_sns_b.png" alt="blog"/></a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/kt.corp" target="_blank" title="KT 페이스북 새창열림"><img src="https://enterprise.kt.com/resource/images/common/ico_sns_f.png" alt="facebook"/></a>&nbsp;&nbsp;
+                <a href="https://twitter.com/kt_corp" target="_blank" title="KT 트위터 새창열림"><img src="https://enterprise.kt.com/resource/images/common/ico_sns_t.png" alt="twitter"/></a>&nbsp;&nbsp;
+                <a href="https://youtube.com/c/KTBiz" target="_blank" title="KT 유튜브 새창열림"><img src="https://enterprise.kt.com/resource/images/common/ico_sns_y.png" alt="youtube"/></a>&nbsp;&nbsp;
+                <a href="https://post.naver.com/my.nhn?memberNo=30305360" target="_blank" title="KT 네이버 포스트 새창열림"><img src="https://enterprise.kt.com/resource/images/common/ico_sns_p.png"/></a>
+                
+            </div>
           </div>
         </div>
       </div>
