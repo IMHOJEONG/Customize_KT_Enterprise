@@ -22,7 +22,7 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
 
   return (
     <footer {...props} className={classes}>
-      <hr />
+      <hr className="footer-line" />
       <div className="footer-container">
         <div
           className={classNames(
@@ -39,12 +39,14 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
               <div>그룹사 소개</div>
             </div>
           </div>
-          <hr />
+          <hr className="footer-line" />
           <div className="footer-bottom text-xxs">
             <div className="footer-copyright">
               Made by{" "}
               <a href="https://enterprise.kt.com/">
-                <b>3조</b>
+                <b className="footer-copyright-hightlight">
+                  임호정이 그립조...
+                </b>
               </a>
               . All right reserved
             </div>

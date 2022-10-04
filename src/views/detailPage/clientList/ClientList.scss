@@ -1,5 +1,6 @@
 .cliet-container {
   background-color: #ffffff;
+  padding-bottom: 60px;
 
   .header {
     padding: 60px 0 40px;
@@ -31,6 +32,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    width: 100vw;
     list-style: none;
 
     -webkit-animation: where 10s linear infinite;

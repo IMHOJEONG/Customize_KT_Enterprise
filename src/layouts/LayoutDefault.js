@@ -1,13 +1,11 @@
-import React from 'react';
-import Header1 from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
+import React from "react";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 const LayoutDefault = ({ children }) => (
   <>
-    <Header1 navPosition="right" className="reveal-from-bottom" />
-    {/* <main className="site-content">
-      {children}
-    </main> */}
+    <Header navPosition="right" className="reveal-from-bottom" />
+    <div>{children}</div>
     <Footer />
   </>
 );
