@@ -1,0 +1,208 @@
+{
+  "AI/BigData": [
+    {
+      "name": "AI Contact Center",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_CC_001.do"
+    },
+    {
+      "name": "AI Robot",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_SM.do"
+    },
+    {
+      "name": "AI Space",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_AS_SM.do"
+    },
+    {
+      "name": "AI Solution",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_ID_SM.do"
+    },
+    {
+      "name": "BigData",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_BD_SM.do"
+    }
+  ],
+  "인터넷/전용회선": [
+    {
+      "name": "기업인터넷",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_CI_SM.do"
+    },
+    {
+      "name": "일반인터넷",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_GI_SM.do"
+    },
+    {
+      "name": "전용회선",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_DL_SM.do"
+    },
+    {
+      "name": "글로벌데이터",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_GD_001.do"
+    },
+    {
+      "name": "매니지드",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_MS_SM.do"
+    }
+  ],
+  "모바일": [
+    {
+      "name": "법인폰",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_BP_001.do"
+    },
+    {
+      "name": "기업전용5G",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_BF_SM.do"
+    },
+    {
+      "name": "기업특화 서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_SM.do"
+    }
+  ],
+  "통신": [
+    {
+      "name": "기업일반전화",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CT_SM.do"
+    },
+    {
+      "name": "기업인터넷전화",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CI_SM.do"
+    },
+    {
+      "name": "전화부가서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_TE_SM.do"
+    },
+    {
+      "name": "지능망",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IN_SM.do"
+    },
+    {
+      "name": "국제전화",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IT_SM.do"
+    },
+    {
+      "name": "스마트메시지",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CM_SM.do"
+    },
+    {
+      "name": "콜센터",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CS_SM.do"
+    }
+  ],
+  "보안/안전 솔루션": [
+    {
+      "name": "영상보안",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_EP_SM.do"
+    },
+    {
+      "name": "안전",
+      "url": "https://enterprise.kt.com/pd/P_PD_SS_SF_SM.do"
+    },
+    {
+      "name": "정보보안",
+      "url": "https://enterprise.kt.com/pd/P_PD_SS_IS_SM.do"
+    }
+  ],
+  "비즈 솔루션": [
+    {
+      "name": "Document DX",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_EP_SM.do"
+    },
+    {
+      "name": "비즈메카EZ",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_BM_001.do"
+    },
+    {
+      "name": "에너지",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_ES_SM.do"
+    },
+    {
+      "name": "스마트공간",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_SF_SM.do"
+    },
+    {
+      "name": "가상공간",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_VS_001.do"
+    },
+    {
+      "name": "모빌리티",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_TS_SM.do"
+    },
+    {
+      "name": "환경",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_EN_001.do"
+    },
+    {
+      "name": "랜선에듀",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_LE_001.do"
+    },
+    {
+      "name": "결합/제휴",
+      "url": "https://enterprise.kt.com/pd/P_PD_BS_CP_001.do"
+    }
+  ],
+  "미디어/광고": [
+    {
+      "name": "olleh tv LiveAD+",
+      "url": "https://enterprise.kt.com/pd/P_PD_MD_AD_001.do"
+    },
+    {
+      "name": "olleh tv UHD Biz",
+      "url": "https://enterprise.kt.com/pd/P_PD_MD_UB_001.do"
+    },
+    {
+      "name": "우리TV시리즈",
+      "url": "https://enterprise.kt.com/pd/P_PD_MD_WT_SM.do"
+    }
+  ],
+  "About Us": [
+    {
+      "name": "KT Enterprise 소개",
+      "url": "https://enterprise.kt.com/au/P_AU_ID_SM.do"
+    },
+    {
+      "name": "MISSION",
+      "url": "https://enterprise.kt.com/au/P_AU_MI_SM.do"
+    },
+    { "name": "인사말", "url": "https://enterprise.kt.com/au/P_AU_GR_SM.do" }
+  ],
+  "DX Insight": [
+    { "name": "전체", "url": "https://enterprise.kt.com/bt/P_BT_SM.do" },
+    {
+      "name": "DX Story",
+      "url": "https://enterprise.kt.com/bt/P_BT_TI_LT_001.do"
+    },
+    {
+      "name": "영상 갤러리",
+      "url": "https://enterprise.kt.com/bt/P_BT_VG_LT_001.do"
+    },
+    {
+      "name": "언론보도",
+      "url": "https://enterprise.kt.com/bt/P_BT_MR_LT_001.do"
+    },
+    {
+      "name": "컨퍼런스",
+      "url": "https://enterprise.kt.com/bt/P_BT_CR_LT.do"
+    }
+  ],
+  "고객지원": [
+    {
+      "name": "브로슈어/신청서",
+      "url": "https://enterprise.kt.com/cs/P_CS_SI_RE_001.do"
+    },
+    {
+      "name": "자주하는 질문(FAQ)",
+      "url": "https://enterprise.kt.com/cs/P_CS_FQ_SC_001.do"
+    },
+    {
+      "name": "1:1 온라인 문의",
+      "url": "https://enterprise.kt.com/cs/P_CS_CQ_001.do"
+    },
+    {
+      "name": "공지사항",
+      "url": "https://enterprise.kt.com/cs/P_CS_NT_LT_001.do"
+    },
+    {
+      "name": "마이비즈",
+      "url": "https://mkt.enterprise.kt.com/l/900091/2021-07-02/35j75"
+    }
+  ]
+}

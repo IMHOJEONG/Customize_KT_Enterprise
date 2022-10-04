@@ -79,13 +79,15 @@ const Header = ({
       {...props}
       className={classes}
     >
-      <div className="container">
+      {/* 헤더시작 */}
+      <div className="container"> 
         <div className={
           classNames(
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
           <Logo />
+          {/* 버튼들 */}
           {!hideNav &&
             <>
               <button
@@ -105,24 +107,50 @@ const Header = ({
                     'header-nav',
                     isActive && 'is-active'
                   )}>
-                <div className="header-nav-inner">
+                <div className="header-nav-inner" color='white'>
                   <ul className={
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link to="Section1" onClick={closeMenu}>About us</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>상품/서비스</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>산업</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>DX insight</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>고객지원 </Link>
+                    </li>
+                    <li>
+                      <div>
+                        <img src={require('./../../assets/images/search_icon.png')}
+                         height="50px"
+                         width="50px"
+                          alt=""></img>
+                      </div>
+                      <div>
+                        검색
+                      </div>
+                    </li>
+                    <li>
+                        <div>
+                          <img src={require('./../../assets/images/k_talk_icon.png')}
+                            height="50px"
+                            width="50px"
+                            alt=""></img>
+                        </div>
+                        <div>
+                            케이톡
+                        </div>
                     </li>
                   </ul>
-                  {!hideSignin &&
-                    <ul
-                      className="list-reset header-nav-right"
-                    >
-                      <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
-                      </li>
-                    </ul>}
                 </div>
               </nav>
             </>}

@@ -8,7 +8,7 @@ const StyledImg = styled.img`
 
 export function Img({ src, ...props }) {
     return (
-        <StyledImg {...props}>
+        <StyledImg src={src} {...props}>
         </StyledImg>
     )
 }

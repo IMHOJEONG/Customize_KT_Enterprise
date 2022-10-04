@@ -117,7 +117,7 @@
 				display: block;
 				text-align: center;
 
-			    a:not(.button) {
+			    a:not(.button) {	
 					display: inline-flex;
 			        @include anchor-aspect(header-mobile);
 					padding-top: $header-nav--padding-v__mobile * 0.5;
