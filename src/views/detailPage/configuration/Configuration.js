@@ -38,11 +38,6 @@ const Configuration = ({
     bottomDivider && "has-bottom-divider"
   );
 
-  const tilesClasses = classNames(
-    "tiles-wrap center-content",
-    pushLeft && "push-left"
-  );
-
   return (
     <section {...props} className={outerClasses}>
       <img
@@ -50,7 +45,7 @@ const Configuration = ({
         src={require("../../../assets/images/pattern1.png")}
         alt="configuration-gigaGenie"
       />
-      <div className="container configuration-container">
+      <div className="configuration-container">
         <div className={innerClasses}>
           <p className="title">
             AI 호텔은 <br />
@@ -61,7 +56,7 @@ const Configuration = ({
             src={require("../../../assets/images/configuration.png")}
             alt="configuration-gigaGenie"
           />
-          <div className={tilesClasses}>
+          <div className="tiles-wrap center-content">
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">

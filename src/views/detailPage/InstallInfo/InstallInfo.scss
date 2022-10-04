@@ -12,7 +12,7 @@
   }
 
   .space {
-    width: 4vw;
+    width: 3vw;
   }
 
   .content-box {
@@ -56,16 +56,16 @@
       padding: 60px;
 
       &-img {
-        max-width: 592px;
-        width: 50vw;
+        max-width: 474px;
+        width: 48vw;
       }
     }
 
     .paragraph {
       display: flex;
       flex-direction: column;
-      width: 550px;
-      height: 510px;
+      width: 474px;
+      height: 400px;
       color: #ffffff;
       letter-spacing: -0.5px;
 
@@ -77,8 +77,8 @@
 
       .text {
         font-weight: 500;
-        font-size: 32px;
-        line-height: 62px;
+        font-size: 28px;
+        line-height: 55px;
         margin: 0;
       }
 
@@ -87,7 +87,7 @@
       }
 
       .sub-text {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 26px;
         margin: 0;
       }

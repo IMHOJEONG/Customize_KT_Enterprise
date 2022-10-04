@@ -31,7 +31,7 @@ export const InstallInfo = () => {
               }
               onClick={() => setTab("old")}
             >
-              구축
+              기축
             </div>
           </div>
           <div className={newTabClasses}>
@@ -66,9 +66,10 @@ export const InstallInfo = () => {
             <div className="paragraph">
               <div className="text-box">
                 <p className="text">
-                  배선 공사가 <br />
-                  <span className="orange">저렴한 비용</span>으로 RCU - 기가지니
-                  <br /> <span className="orange">유선 연동 환경</span>을
+                  배선 공사가<span className="orange"> 불가능</span>하므로,
+                  <br />
+                  별도의 3rd Party 플랫폼을 통해
+                  <br /> <span className="orange">무선 연동 환경</span>을
                   구성합니다.
                 </p>
               </div>
