@@ -57,7 +57,7 @@ const Configuration = ({
             이렇게 구성되어 있어요.
           </p>
           <img
-            className="img"
+            className="img reveal-from-left"
             src={require("../../../assets/images/configuration.png")}
             alt="configuration-gigaGenie"
           />

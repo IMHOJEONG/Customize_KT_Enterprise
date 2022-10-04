@@ -24,7 +24,7 @@ export const MoreInfo = () => {
           href={require("../../../assets/KT AI 호텔_브로슈어.pdf")}
           download="KT AI 호텔_브로슈어.pdf"
         >
-          <div class="box box-left">
+          <div class="box box-left reveal-from-left" data-reveal-delay="200">
             <img
               class="box-icon"
               alt="icon_pdf"
@@ -45,7 +45,7 @@ export const MoreInfo = () => {
           </div>
         </a>
         <div onClick={openConsult} style={{ cursor: "pointer" }}>
-          <div class="box box-middle">
+          <div class="box box-middle reveal-from-left" data-reveal-delay="400">
             <img
               class="box-icon"
               alt="icon_person"
@@ -66,7 +66,7 @@ export const MoreInfo = () => {
           </div>
         </div>
         <div onClick={openChatBot} style={{ cursor: "pointer" }}>
-          <div class="box box-right">
+          <div class="box box-right reveal-from-left" data-reveal-delay="600">
             <img
               class="box-icon"
               alt="icon_qna"

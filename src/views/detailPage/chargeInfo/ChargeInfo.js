@@ -20,7 +20,7 @@ export const ChargeInfo = () => {
     <>
       <div className="ChargeInfo-container">
         <p className="title">요금 안내</p>
-        <div className="content-box">
+        <div className="content-box  reveal-from-bottom">
           <div className="tabs">
             <div
               className={

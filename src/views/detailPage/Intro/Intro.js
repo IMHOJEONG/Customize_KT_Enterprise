@@ -6,15 +6,21 @@ export const Intro = () => {
     <>
       <div className="intro-container">
         <div className="header">
-          <p className="title title-small">
+          <p
+            className="title title-small reveal-from-bottom"
+            data-reveal-delay="200"
+          >
             이런 <span className="title-blue">고민</span>을 한 적 있는
           </p>
-          <p className="title title-big">
+          <p
+            className="title title-big reveal-from-bottom"
+            data-reveal-delay="400"
+          >
             <span className="title-blue">호텔 오너</span>라면?
           </p>
         </div>
 
-        <div className="content">
+        <div className="content reveal-from-bottom" data-reveal-delay="600">
           <div className="box">
             <p className="box-title">
               더 효율적으로

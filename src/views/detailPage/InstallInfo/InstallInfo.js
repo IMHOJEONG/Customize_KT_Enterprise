@@ -38,10 +38,10 @@ export const InstallInfo = () => {
             <img
               src={require("../../../assets/images/install-new.png")}
               alt="content-new"
-              className="content-img"
+              className="content-img reveal-from-left"
             />
             <div className="space"></div>
-            <div className="paragraph">
+            <div className="paragraph reveal-from-bottom">
               <div className="text-box">
                 <p className="text">
                   기가 지니 연동을 위한 배선 공사가 가능해 <br />

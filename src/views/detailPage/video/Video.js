@@ -8,7 +8,7 @@ export const Video = () => {
         <p className="title">
           체크인부터 체크아웃까지, <br /> AI 호텔이 함께 합니다.
         </p>
-        <div className="content">
+        <div className="content reveal-from-bottom">
           <iframe
             src="https://www.youtube.com/embed/Y3VxdJrnYGE"
             title="YouTube video player"
