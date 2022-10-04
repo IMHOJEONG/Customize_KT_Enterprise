@@ -1,166 +1,57 @@
-import React, { useState, useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from './partials/Logo';
+import './Header.css';
+import FadeInOut from './FadeInOut';
 
-const propTypes = {
-  navPosition: PropTypes.string,
-  hideNav: PropTypes.bool,
-  hideSignin: PropTypes.bool,
-  bottomOuterDivider: PropTypes.bool,
-  bottomDivider: PropTypes.bool
-}
+const Header = () => {
 
-const defaultProps = {
-  navPosition: '',
-  hideNav: false,
-  hideSignin: false,
-  bottomOuterDivider: false,
-  bottomDivider: false
-}
+    const openChatBot = () => {
+        window.open(
+            "https://ibot.kt.com/client/chat.html?channelToken=b6841d2830b64f328fdc61c387b7021c",
+            "windowPop",
+            "width=422, height=712, left=500. top = 10, resizable=yes"
+        );
+    }
 
-const Header = ({
-  className,
-  navPosition,
-  hideNav,
-  hideSignin,
-  bottomOuterDivider,
-  bottomDivider,
-  ...props
-}) => {
-
-  const [isActive, setIsactive] = useState(false);
-
-  const nav = useRef(null);
-  const hamburger = useRef(null);
-
-  useEffect(() => {
-    isActive && openMenu();
-    document.addEventListener('keydown', keyPress);
-    document.addEventListener('click', clickOutside);
-    return () => {
-      document.removeEventListener('keydown', keyPress);
-      document.removeEventListener('click', clickOutside);
-      closeMenu();
-    };
-  });  
-
-  const openMenu = () => {
-    document.body.classList.add('off-nav-is-active');
-    nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
-    setIsactive(true);
-  }
-
-  const closeMenu = () => {
-    document.body.classList.remove('off-nav-is-active');
-    nav.current && (nav.current.style.maxHeight = null);
-    setIsactive(false);
-  }
-
-  const keyPress = (e) => {
-    isActive && e.keyCode === 27 && closeMenu();
-  }
-
-  const clickOutside = (e) => {
-    if (!nav.current) return
-    if (!isActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
-    closeMenu();
-  }  
-
-  const classes = classNames(
-    'site-header',
-    bottomOuterDivider && 'has-bottom-divider',
-    className
-  );
-
-  return (
-    <header
-      {...props}
-      className={classes}
-    >
-      {/* 헤더시작 */}
-      <div className="container"> 
-        <div className={
-          classNames(
-            'site-header-inner',
-            bottomDivider && 'has-bottom-divider'
-          )}>
-          <Logo />
-          {/* 버튼들 */}
-          {!hideNav &&
-            <>
-              <button
-                ref={hamburger}
-                className="header-nav-toggle"
-                onClick={isActive ? closeMenu : openMenu}
-              >
-                <span className="screen-reader">Menu</span>
-                <span className="hamburger">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </button>
-              <nav
-                ref={nav}
-                className={
-                  classNames(
-                    'header-nav',
-                    isActive && 'is-active'
-                  )}>
-                <div className="header-nav-inner" color='white'>
-                  <ul className={
-                    classNames(
-                      'list-reset text-xs',
-                      navPosition && `header-nav-${navPosition}`
-                    )}>
+    return (
+        <div className="header">
+            <div className="header-container" color='white'>
+                    <img className = "logo"src={require('./../../assets/images/kt_enterprise_logo.png')}
+                        alt="">
+                    </img>
+                <div className='list'>
                     <li>
-                      <Link to="Section1" onClick={closeMenu}>About us</Link>
+                        <FadeInOut className="list-name" to="Section1" name="상품/서비스"/>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>상품/서비스</Link>
+                        <FadeInOut className="list-name" to="Section1" name="산업"/>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>산업</Link>
+                        <FadeInOut className="list-name" to="Section1" name="DX Information"/>
                     </li>
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>DX insight</Link>
-                    </li>
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>고객지원 </Link>
-                    </li>
-                    <li>
-                      <div>
-                        <img src={require('./../../assets/images/search_icon.png')}
-                         height="50px"
-                         width="50px"
-                          alt=""></img>
-                      </div>
-                      <div>
-                        검색
-                      </div>
-                    </li>
-                    <li>
-                        <div>
-                          <img src={require('./../../assets/images/k_talk_icon.png')}
-                            height="50px"
-                            width="50px"
-                            alt=""></img>
-                        </div>
-                        <div>
-                            케이톡
-                        </div>
-                    </li>
-                  </ul>
                 </div>
-              </nav>
-            </>}
+                    
+                <div className='list2'>
+                    <li>
+                        <img className = "middle" src={require('./../../assets/images/search_icon.png')}
+                            height="30px"
+                            width="30px"
+                            alt="">
+                        </img>
+                        <a className="list-name2" to="#0" >검색</a>
+                    </li>
+                    <li onClick={openChatBot}>
+                        <img className = "middle" src={require('./../../assets/images/k_talk_icon.png')}
+                            height="30px"
+                            width="30px"
+                            alt="">
+                        </img>
+                        <a className="list-name2">케이톡</a>
+                    </li>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
-  );
+    )
 }
-
-Header.propTypes = propTypes;
-Header.defaultProps = defaultProps;
 
 export default Header;

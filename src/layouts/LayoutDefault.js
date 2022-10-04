@@ -1,5 +1,5 @@
 import React from 'react';
-import Header1 from '../components/layout/Header1';
+import Header1 from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 
 const LayoutDefault = ({ children }) => (
@@ -12,4 +12,4 @@ const LayoutDefault = ({ children }) => (
   </>
 );
 
-export default LayoutDefault;  
+export default LayoutDefault;
