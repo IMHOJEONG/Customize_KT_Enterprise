@@ -55,5 +55,7 @@ ul, li{
   margin-left: auto;
   margin-right: auto;
 }
-
+.list2 > li{
+    cursor: pointer;
+}
 
