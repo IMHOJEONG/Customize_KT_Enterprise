@@ -22,7 +22,12 @@ export default function MenuItem(props) {
         <ListSubheader
           component={url ? "a" : "div"}
           href={`${url}`}
-          style={{ color: "black", fontSize: fontSize, fontWeight: "bold" }}
+          style={{
+            color: "black",
+            fontSize: fontSize,
+            fontWeight: "bold",
+            fontFamily: "Noto Sans KR",
+          }}
         >
           {name}
         </ListSubheader>
@@ -37,6 +42,7 @@ export default function MenuItem(props) {
               category={subCategory}
               subCategoryList={SUBCATEGORYLIST[subCategory.name]}
               fontSize={fontSize}
+              fontFamily="Noto Sans KR"
             />
           );
         })}

@@ -16,7 +16,10 @@ export default function ListComponent(props) {
       <ListItemButton href={`${category.url}`} style={{ color: "black" }}>
         <ListItemText
           primary={category.name}
-          primaryTypographyProps={{ fontSize: { fontSize } }}
+          primaryTypographyProps={{
+            fontSize: { fontSize },
+            fontFamily: "Noto Sans KR",
+          }}
         />
       </ListItemButton>
     );
@@ -24,15 +27,21 @@ export default function ListComponent(props) {
 
   return (
     <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-      <ListItemButton href={`${category.url}`} style={{ color: "black" }}>
+      <ListItemButton
+        href={`${category.url}`}
+        style={{ color: "black", fontFamily: "Noto Sans KR" }}
+      >
         <ListItemText
           primary={category.name}
-          primaryTypographyProps={{ fontSize: { fontSize } }}
+          primaryTypographyProps={{
+            fontSize: { fontSize },
+            fontFamily: "Noto Sans KR",
+          }}
         />
         {open ? (
-          <ExpandLess fontSize={fontSize} />
+          <ExpandLess fontSize={fontSize} fontFamily="Noto Sans KR" />
         ) : (
-          <ExpandMore fontSize={fontSize} />
+          <ExpandMore fontSize={fontSize} fontFamily="Noto Sans KR" />
         )}
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
@@ -49,6 +58,7 @@ export default function ListComponent(props) {
                   primaryTypographyProps={{
                     color: "#666",
                     fontSize: { fontSize },
+                    fontFamily: "Noto Sans KR",
                   }}
                 />
               </ListItemButton>

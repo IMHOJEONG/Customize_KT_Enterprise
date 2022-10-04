@@ -16,7 +16,11 @@ export default function Menu(props) {
         {SUBHEADERS[headerName].map((category) => {
           return (
             <Grid key={category.name} {...{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <MenuItem category={category} fontSize="15px" />
+              <MenuItem
+                category={category}
+                fontSize="15px"
+                fontFamily="Noto Sans KR"
+              />
             </Grid>
           );
         })}
