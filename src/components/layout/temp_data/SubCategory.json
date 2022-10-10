@@ -1,0 +1,490 @@
+{
+  "AI Robot": [
+    {
+      "name": "AI 방역로봇",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_005.do"
+    },
+    {
+      "name": "AI 서비스로봇",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_004.do"
+    },
+    {
+      "name": "AI 호텔로봇",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_001.do"
+    },
+    {
+      "name": "AI 뉴바리스타 로봇",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_002.do"
+    },
+    {
+      "name": "AI 케어로봇 시니어",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_003.do"
+    },
+    {
+      "name": "스마트팩토리 Cobot",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_006.do"
+    },
+    {
+      "name": "스마트팩토리 Vision",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_RB_007.do"
+    }
+  ],
+  "AI Space": [
+    {
+      "name": "AI 아파트",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_AS_001.do"
+    },
+    {
+      "name": "AI 주택형 솔루션",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_AS_002.do"
+    },
+    {
+      "name": "AI 호텔",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_AS_003.do"
+    },
+    {
+      "name": "AI 케어 서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_AS_005.do"
+    }
+  ],
+  "AI Solution": [
+    {
+      "name": "기가지니 인사이드",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_ID_004.do"
+    },
+    {
+      "name": "AI 코딩",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_ID_005.do"
+    }
+  ],
+  "BigData": [
+    {
+      "name": "관광분석솔루션(TrIP)",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_BD_001.do"
+    },
+    {
+      "name": "상권분석솔루션(GrIP)",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_BD_002.do"
+    },
+    {
+      "name": "생활인구솔루션(ALP)",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_BD_003.do"
+    },
+    {
+      "name": "타켓마케팅(K-Ads)",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_BD_004.do"
+    },
+    {
+      "name": "마케팅코치",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_BD_005.do"
+    },
+    {
+      "name": "잘나가게",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_BD_006.do"
+    },
+    {
+      "name": "빅데이터 플랫폼",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_BD_007.do"
+    }
+  ],
+  "기업인터넷": [
+    {
+      "name": "Flexline",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_CI_004.do"
+    },
+    {
+      "name": "GiGA office",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_CI_001.do"
+    },
+    {
+      "name": "Kornet",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_CI_002.do"
+    },
+    {
+      "name": "VPN",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_CI_003.do"
+    }
+  ],
+  "일반인터넷": [
+    {
+      "name": "일반인터넷",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_GI_001.do"
+    },
+    {
+      "name": "인터넷 와이파이",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_GI_002.do"
+    },
+    {
+      "name": "오피스넷",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_GI_003.do"
+    },
+    {
+      "name": "오피스넷 보안와이파이",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_GI_004.do"
+    },
+    {
+      "name": "오피스넷 와이파이",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_GI_005.do"
+    },
+    {
+      "name": "포스넷",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_GI_006.do"
+    }
+  ],
+  "전용회선": [
+    {
+      "name": "국내전용회선",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_DL_001.do"
+    },
+    {
+      "name": "방송전용회선",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_DL_002.do"
+    },
+    {
+      "name": "CCTV전용회선",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_DL_003.do"
+    }
+  ],
+  "매니지드": [
+    {
+      "name": "매니지드 ON",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_MS_001.do"
+    },
+    {
+      "name": "매니지드 스위치 & 라우터",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_MS_002.do"
+    },
+    {
+      "name": "매니지드 Wi-Fi",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_MS_003.do"
+    },
+    {
+      "name": "매니지드 통화장비",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_MS_004.do"
+    },
+    {
+      "name": "매니지드 서버",
+      "url": "https://enterprise.kt.com/pd/P_PD_NW_MS_005.do"
+    }
+  ],
+  "기업전용5G": [
+    {
+      "name": "기업전용 음성총량",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_BF_002.do"
+    },
+    {
+      "name": "기업전용 로밍",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_BF_003.do"
+    },
+    {
+      "name": "기업전용5G 속도선택부가서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_BF_001.do"
+    }
+  ],
+  "기업특화 서비스": [
+    {
+      "name": "기업전용톡",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_001.do"
+    },
+    {
+      "name": "랑톡",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_005.do"
+    },
+    {
+      "name": "마이오피스",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_006.do"
+    },
+    {
+      "name": "법인마케팅 서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_BF_001.do"
+    },
+    {
+      "name": "비즈데이터",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_004.do"
+    },
+    {
+      "name": "순Biz data 2종",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_007.do"
+    },
+    {
+      "name": "비즈멤버십",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_008.do"
+    },
+    {
+      "name": "법인명의 본인확인 서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_009.do"
+    },
+    {
+      "name": "Enterprise IoT",
+      "url": "https://enterprise.kt.com/pd/P_PD_MB_SL_010.do"
+    }
+  ],
+  "기업일반전화": [
+    {
+      "name": "기업구내전화(ISDN,DID/DOD)",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CT_001.do"
+    },
+    {
+      "name": "이너텔",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CT_002.do"
+    }
+  ],
+  "기업인터넷전화": [
+    {
+      "name": "기업인터넷전화 Centrex",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CI_001.do"
+    },
+    {
+      "name": "기업인터넷전화 설치형",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CI_002.do"
+    }
+  ],
+  "전화부가서비스": [
+    {
+      "name": "랑고비즈",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_TE_005.do"
+    },
+    {
+      "name": "발신정보알리미",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_TE_006.do"
+    }
+  ],
+  "지능망": [
+    {
+      "name": "전국대표번호",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IN_001.do"
+    },
+    {
+      "name": "수신자부담 080",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IN_002.do"
+    },
+    {
+      "name": "수신자부담 전국대표번호 14YY",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IN_003.do"
+    },
+    {
+      "name": "안심번호 0502",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IN_004.do"
+    },
+    {
+      "name": "콜체크인",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IN_005.do"
+    },
+    {
+      "name": "전화정보 060",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IN_006.do"
+    },
+    {
+      "name": "스마트 헌금콜",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IN_007.do"
+    }
+  ],
+  "국제전화": [
+    {
+      "name": "글로벌 메시징",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IT_003.do"
+    },
+    {
+      "name": "국제 클로버 서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_IT_004.do"
+    }
+  ],
+  "스마트메시지": [
+    {
+      "name": "스마트메시지 Plus",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CM_001.do"
+    },
+    {
+      "name": "스마트메시지 WEB/POP/PRO/API/biz",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CM_002.do"
+    },
+    {
+      "name": "스마트메시지 RCS",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CM_003.do"
+    },
+    {
+      "name": "양방향 문자",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CM_006.do"
+    },
+    {
+      "name": "위치문자",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CM_007.do"
+    },
+    {
+      "name": "가게정보알림메시지(소상공인형)",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CM_005.do"
+    },
+    {
+      "name": "공인알림문자",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CM_008.do"
+    }
+  ],
+  "콜센터": [
+    {
+      "name": "콜센터 커스텀",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CS_003.do"
+    },
+    {
+      "name": "콜센터 커스텀 Pro",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CS_004.do"
+    },
+    {
+      "name": "콜센터 클라우드 비즈",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CS_001.do"
+    },
+    {
+      "name": "콜센터 클라우드 옴니",
+      "url": "https://enterprise.kt.com/pd/P_PD_CC_CS_002.do"
+    }
+  ],
+  "영상보안" :[
+    {
+      "name":"GiGAeyes i-slim/i-view",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_VS_001.do"
+    },{
+      "name":"GiGAeyes i-special",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_VS_002.do"
+    },{
+      "name":"GiGAeyes i-pass",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_VS_003.do"
+    },{
+      "name":"GiGAeyes i-guard",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_VS_004.do"
+    },{
+      "name":"GiGAeyes i-guard premium",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_VS_005.do"
+    },{
+      "name":"GiGAeyes Pro",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_VS_006.do"
+    }
+  ],
+  "안전" :[
+    {
+      "name":"SafeMate 화재서비스",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_SF_001.do"
+    },{
+      "name":"SafeMate 방범서비스",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_SF_002.do"
+    },{
+      "name":"SafetyOne",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_SF_003.do"
+    }
+  ],
+  "정보보안" :[
+    {
+      "name":"SafeNet",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_IS_001.do"
+    },{
+      "name":"Secure UTM",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_IS_002.do"
+    },{
+      "name":"Secure gate",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_IS_003.do"
+    },{
+      "name":"Secure WiFi",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_IS_004.do"
+    },{
+      "name":"지능형 위협메일 분석",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_IS_005.do"
+    },{
+      "name":"클린존",
+      "url":"https://enterprise.kt.com/pd/P_PD_SS_IS_006.do"
+    }
+  ],
+  "Document DX" : [
+    {
+      "name":"공인전자문서센터",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_EP_003.do"
+    },{
+      "name":"Paperless 플랫폼",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_EP_001.do"
+    }
+  ],
+  "비즈메카EZ" : [
+  ],
+  "에너지" : [
+    {
+      "name":"GiGA energy manager",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_ES_001.do"
+    },{
+      "name":"GiGA energy DR",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_ES_002.do"
+    },{
+      "name":"GiGA energy trade",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_ES_006.do"
+    }
+  ],
+  "스마트공간" : [
+    {
+      "name":"공간컨텐츠관리솔루션(CMS)",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_SF_001.do"
+    }
+  ],
+  "가상공간" : [
+    {
+      "name":"Real Cube",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_VS_001.do"
+    }
+  ],
+  "모빌리티" : [
+    {
+      "name":"정밀측위",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_TS_001.do"
+    },{
+      "name":"자율주행 셔틀",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_TS_002.do"
+    },{
+      "name":"GIS",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_TS_003.do"
+    },{
+      "name":"AI교통영상분석솔루션",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_TS_004.do"
+    },{
+      "name":"DTG/법인차량 관제",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_TS_005.do"
+    },{
+      "name":"EV 차량관제",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_TS_006.do"
+    },{
+      "name":"EV 바이크 관제",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_TS_007.do"
+    }
+  ],
+  "환경" : [
+    {
+      "name":"Air Map",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_EN_001.do"
+    }
+  ],
+  "랜선에듀" : [
+  ],
+  "결합/제휴" : [
+    {
+      "name":"비즈성공팩",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_CP_001.do"
+    },{
+      "name":"주소변경 사업 제휴",
+      "url":"https://enterprise.kt.com/pd/P_PD_BS_CP_002.do"
+    }
+  ],
+  "olleh tv LiveAD+" : [
+  ],
+  "olleh tv UHD Biz" : [
+  ],
+  "우리TV시리즈" : [
+    {
+      "name":"우리지자체 tv",
+      "url":"https://enterprise.kt.com/pd/P_PD_MD_WT_001.do"
+    },{
+      "name":"우리소방/경찰서 tv",
+      "url":"https://enterprise.kt.com/pd/P_PD_MD_WT_002.do"
+    },{
+      "name":"우리병원 tv",
+      "url":"https://enterprise.kt.com/pd/P_PD_MD_WT_003.do"
+    },{
+      "name":"우리조합 tv",
+      "url":"https://enterprise.kt.com/pd/P_PD_MD_WT_004.do"
+    }
+  ]        
+}
+

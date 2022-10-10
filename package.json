@@ -1,0 +1,55 @@
+{
+  "name": "customize_kt_enterprise",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.6",
+    "@use-gesture/react": "^10.2.20",
+    "classnames": "^2.2.6",
+    "dotenv": "^16.0.3",
+    "gh-pages": "^4.0.0",
+    "lodash": "^4.17.21",
+    "lodash.shuffle": "^4.2.0",
+    "react": "^18.2.0",
+    "react-chatbot-kit": "^2.1.0",
+    "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "react-spring": "^9.5.4",
+    "sass": "^1.49.7",
+    "styled-components": "^5.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IMHOJEONG/Customize_KT_Enterprise.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "postbuild": "cp build/index.html build/404.html"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

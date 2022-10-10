@@ -1,0 +1,101 @@
+{
+  "HEADERS": {
+    "About Us": {
+      "name": "About Us",
+      "url": "https://enterprise.kt.com/au/P_AU_ID_SM.do"
+    },
+    "상품/서비스": {
+      "name": "상품/서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_SM.do"
+    },
+    "산업": {
+      "name": "산업",
+      "url": "https://enterprise.kt.com/sl/P_SL_FN_001.do"
+    },
+    "DX Insight": {
+      "name": "DX Insight",
+      "url": "https://enterprise.kt.com/bt/P_BT_SM.do"
+    },
+    "고객지원": {
+      "name": "고객지원",
+      "url": "https://enterprise.kt.com/cs/P_CS_FQ_SC_001.do"
+    }
+  },
+  "SUBHEADERS": {
+    "About Us": [
+      {
+        "name": "KT Enterprise 소개",
+        "url": "https://enterprise.kt.com/au/P_AU_ID_SM.do"
+      },
+      {
+        "name": "MISSION",
+        "url": "https://enterprise.kt.com/au/P_AU_MI_SM.do"
+      },
+      { "name": "인사말", "url": "https://enterprise.kt.com/au/P_AU_GR_SM.do" }
+    ],
+    "상품/서비스": [
+      { "name": "AI/BigData" },
+      { "name": "인터넷/전용회선" },
+      { "name": "모바일" },
+      { "name": "통신" },
+      { "name": "보안/안전 솔루션" },
+      { "name": "비즈 솔루션" },
+      { "name": "미디어/광고" }
+    ],
+    "산업": [
+      { "name": "금융", "url": "https://enterprise.kt.com/sl/P_SL_FN_001.do" },
+      { "name": "제조", "url": "https://enterprise.kt.com/sl/P_SL_MF_001.do" },
+      { "name": "물류", "url": "https://enterprise.kt.com/sl/P_SL_RT_001.do" },
+      { "name": "의료", "url": "https://enterprise.kt.com/sl/P_SL_MD_001.do" },
+      {
+        "name": "공공/국방",
+        "url": "https://enterprise.kt.com/sl/P_SL_PB_001.do"
+      },
+      {
+        "name": "프랜차이즈",
+        "url": "https://enterprise.kt.com/sl/P_SL_FC_001.do"
+      }
+    ],
+    "DX Insight": [
+      { "name": "전체", "url": "https://enterprise.kt.com/bt/P_BT_SM.do" },
+      {
+        "name": "DX Story",
+        "url": "https://enterprise.kt.com/bt/P_BT_TI_LT_001.do"
+      },
+      {
+        "name": "영상 갤러리",
+        "url": "https://enterprise.kt.com/bt/P_BT_VG_LT_001.do"
+      },
+      {
+        "name": "언론보도",
+        "url": "https://enterprise.kt.com/bt/P_BT_MR_LT_001.do"
+      },
+      {
+        "name": "컨퍼런스",
+        "url": "https://enterprise.kt.com/bt/P_BT_CR_LT.do"
+      }
+    ],
+    "고객지원": [
+      {
+        "name": "브로슈어/신청서",
+        "url": "https://enterprise.kt.com/cs/P_CS_SI_RE_001.do"
+      },
+      {
+        "name": "자주하는 질문(FAQ)",
+        "url": "https://enterprise.kt.com/cs/P_CS_FQ_SC_001.do"
+      },
+      {
+        "name": "1:1 온라인 문의",
+        "url": "https://enterprise.kt.com/cs/P_CS_CQ_001.do"
+      },
+      {
+        "name": "공지사항",
+        "url": "https://enterprise.kt.com/cs/P_CS_NT_LT_001.do"
+      },
+      {
+        "name": "마이비즈",
+        "url": "https://mkt.enterprise.kt.com/l/900091/2021-07-02/35j75"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+.cliet-container {
+  background-color: #ffffff;
+  padding-bottom: 60px;
+
+  .header {
+    padding: 60px 0 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #000000;
+  }
+
+  @keyframes where {
+    /* keyframe */
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100vw);
+    }
+  }
+
+  .roller {
+    width: 200vw;
+    display: flex;
+  }
+
+  .list {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100vw;
+    list-style: none;
+
+    -webkit-animation: where 10s linear infinite;
+    animation: where 10s linear infinite;
+  }
+}

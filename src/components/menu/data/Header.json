@@ -1,0 +1,52 @@
+{
+  "HEADERS": [
+    {
+      "name": "상품/서비스",
+      "url": "https://enterprise.kt.com/pd/P_PD_AI_SM.do"
+    },
+    { "name": "산업", "url": "https://enterprise.kt.com/sl/P_SL_FN_001.do" },
+    {
+      "name": "About KT",
+      "url": ""
+    }
+  ],
+  "SUBHEADERS": {
+    "상품/서비스": [
+      { "name": "AI/BigData" },
+      { "name": "인터넷/전용회선" },
+      { "name": "모바일" },
+      { "name": "통신" },
+      { "name": "보안/안전 솔루션" },
+      { "name": "비즈 솔루션" },
+      { "name": "미디어/광고" }
+    ],
+    "산업": [
+      { "name": "금융", "url": "https://enterprise.kt.com/sl/P_SL_FN_001.do" },
+      { "name": "제조", "url": "https://enterprise.kt.com/sl/P_SL_MF_001.do" },
+      { "name": "물류", "url": "https://enterprise.kt.com/sl/P_SL_RT_001.do" },
+      { "name": "의료", "url": "https://enterprise.kt.com/sl/P_SL_MD_001.do" },
+      {
+        "name": "공공/국방",
+        "url": "https://enterprise.kt.com/sl/P_SL_PB_001.do"
+      },
+      {
+        "name": "프랜차이즈",
+        "url": "https://enterprise.kt.com/sl/P_SL_FC_001.do"
+      }
+    ],
+    "About KT": [
+      {
+        "name": "About Us",
+        "url": "https://enterprise.kt.com/au/P_AU_ID_SM.do"
+      },
+      {
+        "name": "DX Insight",
+        "url": "https://enterprise.kt.com/bt/P_BT_SM.do"
+      },
+      {
+        "name": "고객지원",
+        "url": "https://enterprise.kt.com/cs/P_CS_FQ_SC_001.do"
+      }
+    ]
+  }
+}
